@@ -5,6 +5,23 @@
     font-family: 'Roboto', sans-serif;
 }
 
+@keyframes animation-pages {
+
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: animation-pages 0.9s;
+    opacity: 1;
+}
+
 @import "../scss/ui_components_style/nav.scss";
 @import "../scss/structure/grid.scss";
 @import "../scss/ui_components_style/footer.scss";
+@import "../scss/pages/contactanos.scss";

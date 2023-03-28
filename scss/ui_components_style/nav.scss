@@ -3,7 +3,6 @@ header {
     background: linear-gradient(78deg,
             rgba(168, 100, 100, 1) 40%,
             rgba(128, 70, 116, 1) 75%);
-
     max-width: 100%;
 }
 
@@ -243,18 +242,20 @@ nav {
         padding: 50px 20px;
         transition: transform 0.6s ease;
         z-index: 1;
+
+        a {
+            display: block;
+            font-size: 25px;
+            margin-bottom: 20px;
+            color: #ffffff;
+            text-decoration: none;
+            height: auto;
+            width: 35%;
+        }
     }
 
     .offcanvas.show {
-        transform: translateX(-100%);
-    }
-
-    .offcanvas a {
-        display: block;
-        font-size: 20px;
-        margin-bottom: 20px;
-        color: #ffffff;
-        text-decoration: none;
+        transform: translateX(-110%);
     }
 
     .close-btn {
@@ -305,6 +306,16 @@ nav {
     .menu-btn:after {
         transform: translateY(11px);
     }
+
+    .offcanvas {
+        a {
+            font-size: 22px;
+        }
+    }
+
+    .offcanvas.show {
+        transform: translateX(-100%);
+    }
 }
 
 @media (max-width: 490px) {
@@ -339,6 +350,12 @@ nav {
 
     .menu-btn:after {
         transform: translateY(9px);
+    }
+
+    .offcanvas {
+        a {
+            font-size: 20px;
+        }
     }
 }
 
