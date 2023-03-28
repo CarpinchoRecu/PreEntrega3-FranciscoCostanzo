@@ -1,0 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+@import "../scss/ui_components_style/nav.scss";
+@import "../scss/structure/grid.scss";
+@import "../scss/ui_components_style/footer.scss";
