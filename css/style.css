@@ -16,7 +16,7 @@ body {
 
 header {
   background: #a86464;
-  background: linear-gradient(78deg, #a86464 40%, #804674 75%);
+  background: linear-gradient(78deg, #a86464 32%, #804674 75%);
   max-width: 100%; }
 
 #menu-burger {
@@ -87,6 +87,8 @@ nav {
     font-size: 25px; } }
 
 @media (max-width: 1150px) {
+  header {
+    background: linear-gradient(78deg, #a86464 27%, #804674 75%); }
   nav .title-logo {
     gap: 1.5rem; }
     nav .title-logo h2 {
@@ -110,6 +112,9 @@ nav {
     font-size: 20px; } }
 
 @media (max-width: 800px) {
+  header {
+    background: #a86464;
+    background: linear-gradient(78deg, #a86464 19%, #804674 75%); }
   #menu-burger {
     display: block; }
   nav .title-logo h2 {
@@ -228,6 +233,9 @@ nav {
     font-size: 20px; } }
 
 @media (max-width: 440px) {
+  header {
+    background: #a86464;
+    background: linear-gradient(78deg, #a86464 3%, #804674 75%); }
   nav .title-logo h2 {
     font-size: 24px; } }
 
