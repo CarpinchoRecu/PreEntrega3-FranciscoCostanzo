@@ -1,5 +1,5 @@
 .contact {
-    .section1 {
+    .section-contact1 {
         display: flex;
         align-items: center;
         flex-direction: column;
@@ -40,11 +40,11 @@
         }
     }
 
-    .br{
+    .br {
         padding: 30px;
     }
 
-    .section2 {
+    .section-contact2 {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -58,7 +58,7 @@
 
 @media (max-width: 1450px) {
     .contact {
-        .section1 {
+        .section-contact1 {
             h2 {
                 font-size: 37px;
             }
@@ -73,7 +73,7 @@
             }
         }
 
-        .section2 {
+        .section-contact2 {
             h2 {
                 font-size: 35px;
             }
@@ -83,7 +83,7 @@
 
 @media (max-width: 1280px) {
     .contact {
-        .section1 {
+        .section-contact1 {
             h2 {
                 font-size: 34px;
             }
@@ -98,7 +98,7 @@
             }
         }
 
-        .section2 {
+        .section-contact2 {
             h2 {
                 font-size: 31px;
             }
@@ -108,7 +108,7 @@
 
 @media (max-width: 1120px) {
     .contact {
-        .section1 {
+        .section-contact1 {
             h2 {
                 font-size: 30px;
             }
@@ -123,7 +123,7 @@
             }
         }
 
-        .section2 {
+        .section-contact2 {
             h2 {
                 font-size: 27px;
             }
@@ -133,7 +133,7 @@
 
 @media (max-width: 990px) {
     .contact {
-        .section1 {
+        .section-contact1 {
             h2 {
                 font-size: 27px;
             }
@@ -148,7 +148,7 @@
             }
         }
 
-        .section2 {
+        .section-contact2 {
             h2 {
                 font-size: 23px;
             }
@@ -165,7 +165,7 @@
 
 @media (max-width: 820px) {
     .contact {
-        .section1 {
+        .section-contact1 {
             h2 {
                 font-size: 24px;
             }
@@ -180,7 +180,7 @@
             }
         }
 
-        .section2 {
+        .section-contact2 {
             h2 {
                 font-size: 23px;
             }
@@ -197,17 +197,17 @@
 
 @media (max-width: 780px) {
     .contact {
-
-        .section1{
+        .section-contact1 {
             gap: 20px;
         }
-        
 
-        .section2 {
+        .section-contact2 {
             gap: 13px;
-            h2{
+
+            h2 {
                 font-size: 20px;
             }
+
             div {
                 iframe {
                     width: 537px;
@@ -220,15 +220,14 @@
 
 @media (max-width: 550px) {
     .contact {
-        .br{
+        .br {
             padding: 1px;
             width: 100%;
             height: 20px;
             background-color: #0000003b;
         }
 
-        .section2 {
-
+        .section-contact2 {
             h2 {
                 font-size: 18px;
             }
@@ -245,22 +244,22 @@
 
 @media (max-width: 470px) {
     .contact {
-
-        .section1 {
+        .section-contact1 {
             h2 {
                 font-size: 20px;
             }
         }
 
-        .br{
+        .br {
             padding: 1px;
             width: 100%;
             height: 33px;
             background-color: #0000003b;
         }
 
-        .section2 {
+        .section-contact2 {
             gap: 25px;
+
             h2 {
                 font-size: 17px;
             }
@@ -277,8 +276,7 @@
 
 @media (max-width: 390px) {
     .contact {
-        .section2 {
-
+        .section-contact2 {
             div {
                 iframe {
                     width: 333px;
