@@ -16,8 +16,7 @@ body {
   opacity: 1; }
 
 header {
-  background: #a86464;
-  background: linear-gradient(78deg, #a86464 32%, #804674 75%);
+  background-color: #245953;
   max-width: 100%; }
 
 #menu-burger {
@@ -55,7 +54,7 @@ nav {
     nav .title-logo img:hover {
       border: 2px solid #ffffff;
       border-radius: 50%;
-      background-color: #804674; }
+      background-color: #d8d8d8; }
   nav .buttons {
     display: flex;
     justify-content: space-evenly;
@@ -73,7 +72,7 @@ nav {
     nav .buttons a:hover {
       border: 2px solid #ffffff;
       border-radius: 20px;
-      background-color: #a86464;
+      background-color: #d8d8d8;
       padding: 5px; }
 
 /*Media Queries*/
@@ -89,7 +88,7 @@ nav {
 
 @media (max-width: 1150px) {
   header {
-    background: linear-gradient(78deg, #a86464 27%, #804674 75%); }
+    background: #245953; }
   nav .title-logo {
     gap: 1.5rem; }
     nav .title-logo h2 {
@@ -114,8 +113,7 @@ nav {
 
 @media (max-width: 800px) {
   header {
-    background: #a86464;
-    background: linear-gradient(78deg, #a86464 19%, #804674 75%); }
+    background: #245953; }
   #menu-burger {
     display: block; }
   nav .title-logo h2 {
@@ -128,7 +126,7 @@ nav {
     align-items: center;
     width: 4.7rem;
     height: 4.7rem;
-    background-color: #a86464;
+    background-color: #000000;
     border-radius: 50%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
     position: fixed;
@@ -276,16 +274,15 @@ body {
   grid-template-rows: auto; }
   body .grid-header {
     grid-area: header;
-    border-bottom: solid 2px #F5FFC9; }
+    border-bottom: solid 2px #D8D8D8; }
   body .grid-main {
     grid-area: main;
-    background: #a86464;
-    background: linear-gradient(78deg, #a86464 40%, #804674 75%); }
+    background: #408E91; }
   body .grid-footer {
     grid-area: footer; }
 
 footer {
-  background-color: #b3e5be;
+  background-color: #D8D8D8;
   display: flex;
   flex-direction: column;
   gap: 17px; }
@@ -352,7 +349,7 @@ footer {
     border-radius: 38% 27%; }
   .contact .section-contact1 div a .contact-wp:hover {
     animation: wp 0.5s ease;
-    background-color: #a86464; }
+    background-color: #D8D8D8; }
 
 .contact .br {
   padding: 30px; }
@@ -529,7 +526,7 @@ footer {
       height: 100%;
       width: 100%;
       z-index: 1;
-      background-color: #f5ffc9;
+      background-color: #D8D8D8;
       display: flex;
       flex-direction: column;
       justify-content: end;

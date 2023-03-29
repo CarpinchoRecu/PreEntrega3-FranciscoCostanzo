@@ -1,8 +1,5 @@
 header {
-    background: rgb(168, 100, 100);
-    background: linear-gradient(78deg,
-            rgba(168, 100, 100, 1) 32%,
-            rgba(128, 70, 116, 1) 75%);
+    background-color: #245953;
     max-width: 100%;
 }
 
@@ -55,7 +52,7 @@ nav {
         img:hover {
             border: 2px solid #ffffff;
             border-radius: 50%;
-            background-color: #804674;
+            background-color: #d8d8d8;
         }
     }
 
@@ -84,7 +81,7 @@ nav {
         a:hover {
             border: 2px solid #ffffff;
             border-radius: 20px;
-            background-color: #a86464;
+            background-color: #d8d8d8;
             padding: 5px;
         }
     }
@@ -115,11 +112,8 @@ nav {
 }
 
 @media (max-width: 1150px) {
-
     header {
-        background: linear-gradient(78deg,
-                rgba(168, 100, 100, 1) 27%,
-                rgba(128, 70, 116, 1) 75%);
+        background: #245953;
     }
 
     nav {
@@ -171,12 +165,8 @@ nav {
 }
 
 @media (max-width: 800px) {
-
     header {
-        background: rgb(168, 100, 100);
-        background: linear-gradient(78deg,
-                rgba(168, 100, 100, 1) 19%,
-                rgba(128, 70, 116, 1) 75%);
+        background: #245953;
     }
 
     #menu-burger {
@@ -201,7 +191,7 @@ nav {
         align-items: center;
         width: 4.7rem;
         height: 4.7rem;
-        background-color: #a86464;
+        background-color: #000000;
         border-radius: 50%;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
         position: fixed;
@@ -375,7 +365,6 @@ nav {
 }
 
 @media (max-width: 440px) {
-
     header {
         background: rgb(168, 100, 100);
         background: linear-gradient(78deg,
