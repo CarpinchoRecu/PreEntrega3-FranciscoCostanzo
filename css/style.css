@@ -233,8 +233,7 @@ nav {
 
 @media (max-width: 440px) {
   header {
-    background: #a86464;
-    background: linear-gradient(78deg, #a86464 3%, #804674 75%); }
+    background: #245953; }
   nav .title-logo h2 {
     font-size: 24px; } }
 
@@ -333,7 +332,9 @@ footer {
   flex-direction: column;
   gap: 10px; }
   .contact .section-contact1 h2 {
-    font-size: 40px; }
+    font-size: 50px; }
+  .contact .section-contact1 .txt-abajo1 {
+    font-size: 35px; }
 
 @keyframes wp {
   0% {
@@ -349,7 +350,7 @@ footer {
     border-radius: 38% 27%; }
   .contact .section-contact1 div a .contact-wp:hover {
     animation: wp 0.5s ease;
-    background-color: #D8D8D8; }
+    background-color: #d8d8d8; }
 
 .contact .br {
   padding: 30px; }
@@ -360,43 +361,49 @@ footer {
   align-items: center;
   gap: 3px; }
   .contact .section-contact2 h2 {
-    font-size: 40px; }
+    font-size: 50px; }
+  .contact .section-contact2 .txt-abajo2 {
+    font-size: 35px; }
 
 @media (max-width: 1450px) {
   .contact .section-contact1 h2 {
-    font-size: 37px; }
+    font-size: 45px; }
+  .contact .section-contact1 .txt-abajo1 {
+    font-size: 30px; }
   .contact .section-contact1 div a .contact-wp {
     height: 200px;
     width: 200px; }
   .contact .section-contact2 h2 {
-    font-size: 35px; } }
+    font-size: 45px; }
+  .contact .section-contact2 .txt-abajo2 {
+    font-size: 30px; } }
 
 @media (max-width: 1280px) {
   .contact .section-contact1 h2 {
-    font-size: 34px; }
+    font-size: 40px; }
   .contact .section-contact1 div a .contact-wp {
     height: 198px;
     width: 198px; }
   .contact .section-contact2 h2 {
-    font-size: 31px; } }
+    font-size: 40px; } }
 
 @media (max-width: 1120px) {
-  .contact .section-contact1 h2 {
-    font-size: 30px; }
   .contact .section-contact1 div a .contact-wp {
     height: 190px;
-    width: 190px; }
-  .contact .section-contact2 h2 {
-    font-size: 27px; } }
+    width: 190px; } }
 
 @media (max-width: 990px) {
   .contact .section-contact1 h2 {
-    font-size: 27px; }
+    font-size: 40px; }
+  .contact .section-contact1 .txt-abajo1 {
+    font-size: 25px; }
   .contact .section-contact1 div a .contact-wp {
     height: 180px;
     width: 180px; }
   .contact .section-contact2 h2 {
-    font-size: 23px; }
+    font-size: 40px; }
+  .contact .section-contact2 .txt-abajo2 {
+    font-size: 25px; }
   .contact .section-contact2 div iframe {
     width: 700px;
     height: 380px; } }
@@ -429,7 +436,7 @@ footer {
     padding: 1px;
     width: 100%;
     height: 20px;
-    background-color: #0000003b; }
+    background-color: #00000000; }
   .contact .section-contact2 h2 {
     font-size: 18px; }
   .contact .section-contact2 div iframe {
@@ -438,21 +445,33 @@ footer {
 
 @media (max-width: 470px) {
   .contact .section-contact1 h2 {
-    font-size: 20px; }
+    font-size: 26px; }
+  .contact .section-contact1 .txt-abajo1 {
+    font-size: 24px; }
   .contact .br {
     padding: 1px;
     width: 100%;
-    height: 33px;
-    background-color: #0000003b; }
+    height: 0;
+    background-color: #00000000; }
   .contact .section-contact2 {
     gap: 25px; }
     .contact .section-contact2 h2 {
-      font-size: 17px; }
+      font-size: 26px; }
+    .contact .section-contact2 .txt-abajo2 {
+      font-size: 22px; }
     .contact .section-contact2 div iframe {
       width: 400px;
       height: 290px; } }
 
 @media (max-width: 390px) {
+  .contact .section-contact1 h2 {
+    font-size: 24px; }
+  .contact .section-contact1 .txt-abajo1 {
+    font-size: 20px; }
+  .contact .section-contact2 h2 {
+    font-size: 33px; }
+  .contact .section-contact2 .txt-abajo2 {
+    font-size: 20px; }
   .contact .section-contact2 div iframe {
     width: 333px;
     height: 248px; } }
@@ -566,7 +585,9 @@ footer {
       .card2 .container .box img {
         border-radius: 19px;
         height: 100%;
-        width: 100%; }
+        width: 100%;
+        object-fit: contain;
+        background-color: #ffffff; }
       .card2 .container .box .box-txt {
         display: flex;
         flex-direction: column;
