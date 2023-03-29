@@ -132,7 +132,7 @@
     transform: translateY(0);
 
     .container {
-        height: 26rem;
+        height: 22rem;
         width: 22rem;
 
         .box {
@@ -261,8 +261,8 @@
 
     .card2 {
         .container {
-            height: 22rem;
-            width: 18rem;
+            height: 19rem;
+            width: 19rem;
 
             .box {
                 .box-txt {
@@ -304,11 +304,6 @@
         .section-index1 {
             gap: 53px;
         }
-
-        .section-index2 {
-            gap: 100px;
-            padding: 2rem;
-        }
     }
 
     .card {
@@ -348,6 +343,87 @@
     .card2 {
         .container {
             height: 17rem;
+            width: 17rem;
+
+            .box {
+                .box-txt {
+                    h2 {
+                        font-size: 18px;
+                    }
+
+                    .line-img {
+                        width: 50%;
+                    }
+                }
+            }
+
+            .box2 {
+                h2 {
+                    font-size: 15px;
+                }
+            }
+
+            &:hover .box2 {
+                transform: translate(1rem, 1rem);
+            }
+
+            &:hover .box {
+                transform: translate(-1rem, -1rem);
+            }
+        }
+    }
+}
+
+@media (max-width: 1150px) {
+    #grid-index {
+        .note {
+            h2 {
+                font-size: 12px;
+            }
+        }
+
+        .section-index1 {
+            gap: 53px;
+        }
+    }
+
+    .card {
+        .container {
+            height: 27rem;
+            width: 20rem;
+
+            .box {
+                .box-txt {
+                    h2 {
+                        font-size: 20px;
+                    }
+
+                    .line-img {
+                        width: 46%;
+                    }
+                }
+            }
+
+            .box2 {
+                h2 {
+                    font-size: 17px;
+                    left: 40px;
+                }
+            }
+
+            &:hover .box2 {
+                transform: translate(2rem, 2rem);
+            }
+
+            &:hover .box {
+                transform: translate(-2rem, -2rem);
+            }
+        }
+    }
+
+    .card2 {
+        .container {
+            height: 16rem;
             width: 16rem;
 
             .box {
@@ -433,9 +509,6 @@
 
     .card2 {
         .container {
-            height: 17rem;
-            width: 16rem;
-
             .box {
                 .box-txt {
                     h2 {
@@ -465,7 +538,8 @@
     }
 }
 
-@media (max-width: 1150px) {
+@media (max-width: 680px) {
+
     #grid-index {
         .note {
             h2 {
@@ -478,49 +552,52 @@
         }
 
         .section-index2 {
-            gap: 100px;
+            gap: 20px;
             padding: 2rem;
         }
     }
+
+    .card2 {
+        .container {
+            height: 9rem;
+            width: 9rem;
+
+            .box {
+                .box-txt {
+                    h2 {
+                        font-size: 13px;
+                    }
+
+                    .line-img {
+                        height: 2px;
+                        width: 50%;
+                    }
+                }
+            }
+
+            .box2 {
+                h2 {
+                    font-size: 10px;
+                }
+            }
+
+            &:hover .box2 {
+                transform: translate(1rem, 1rem);
+            }
+
+            &:hover .box {
+                transform: translate(-0.6rem, -0.6rem);
+            }
+        }
+    }
+}
+
+@media (max-width: 380px) {
 
     .card {
         .container {
-            height: 27rem;
-            width: 20rem;
-
-            .box {
-                .box-txt {
-                    h2 {
-                        font-size: 20px;
-                    }
-
-                    .line-img {
-                        width: 46%;
-                    }
-                }
-            }
-
-            .box2 {
-                h2 {
-                    font-size: 17px;
-                    left: 40px;
-                }
-            }
-
-            &:hover .box2 {
-                transform: translate(2rem, 2rem);
-            }
-
-            &:hover .box {
-                transform: translate(-2rem, -2rem);
-            }
-        }
-    }
-
-    .card2 {
-        .container {
-            height: 17rem;
-            width: 16rem;
+            height: 22rem;
+            width: 17rem;
 
             .box {
                 .box-txt {
@@ -529,39 +606,37 @@
                     }
 
                     .line-img {
-                        width: 50%;
+                        width: 45%;
                     }
                 }
             }
 
             .box2 {
                 h2 {
-                    font-size: 15px;
+                    font-size: 14px;
                 }
             }
 
             &:hover .box2 {
-                transform: translate(1rem, 1rem);
+                transform: translate(1.5rem, 1.5rem);
             }
 
             &:hover .box {
-                transform: translate(-1rem, -1rem);
+                transform: translate(-1.5rem, -1.5rem);
             }
         }
     }
-}
-
-@media (max-width: 680px) {
 
     #grid-index {
         .note {
             h2 {
-                font-size: 12px;
+                font-size: 10px;
             }
         }
 
         .section-index1 {
-            gap: 53px;
+            gap: 40px;
+            padding: 29px;
         }
 
         .section-index2 {
@@ -572,13 +647,13 @@
 
     .card2 {
         .container {
-            height: 11rem;
-            width: 10rem;
+            height: 8rem;
+            width: 8rem;
 
             .box {
                 .box-txt {
                     h2 {
-                        font-size: 13px;
+                        font-size: 10px;
                     }
 
                     .line-img {
@@ -590,7 +665,7 @@
 
             .box2 {
                 h2 {
-                    font-size: 15px;
+                    font-size: 8px;
                 }
             }
 
@@ -599,61 +674,7 @@
             }
 
             &:hover .box {
-                transform: translate(-1rem, -1rem);
-            }
-        }
-    }
-}
-
-@media (max-width: 680px) {
-
-    #grid-index {
-        .note {
-            h2 {
-                font-size: 12px;
-            }
-        }
-
-        .section-index1 {
-            gap: 53px;
-        }
-
-        .section-index2 {
-            gap: 20px;
-            padding: 2rem;
-        }
-    }
-
-    .card2 {
-        .container {
-            height: 11rem;
-            width: 10rem;
-
-            .box {
-                .box-txt {
-                    h2 {
-                        font-size: 13px;
-                    }
-
-                    .line-img {
-                        height: 2px;
-                        width: 50%;
-                    }
-                }
-            }
-
-            .box2 {
-                h2 {
-                    font-size: 15px;
-                }
-            }
-
-            &:hover .box2 {
-                transform: translate(1rem, 1rem);
-            }
-
-            &:hover .box {
-                transform: translate(-1rem, -1rem);
+                transform: translate(-0.6rem, -0.6rem);
             }
         }
     }
