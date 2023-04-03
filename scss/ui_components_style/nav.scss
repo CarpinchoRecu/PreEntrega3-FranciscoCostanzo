@@ -1,11 +1,17 @@
+/*color de nav*/
+
 header {
     background-color: #245953;
     max-width: 100%;
 }
 
+/*Menu Hamburguesa*/
+
 #menu-burger {
     display: none;
 }
+
+/*UI-BarraNav*/
 
 nav {
     display: flex;
@@ -84,6 +90,63 @@ nav {
             background-color: #d8d8d8;
             padding: 5px;
         }
+    }
+}
+
+/*Animacion para las notas*/
+
+@keyframes note-animate {
+    0% {
+        opacity: 0;
+        transform: translateY(-26px);
+    }
+
+    20% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    40% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    80% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(26px);
+    }
+}
+
+/*Notas abajo de la nav*/
+
+.note {
+    border-top: solid 2px #d8d8d8;
+    display: flex;
+    justify-content: center;
+    background-color: #000000;
+    padding: 1rem;
+
+    .note1 {
+        animation: note-animate 5.5s ease-in-out forwards;
+        color: #ffffff;
+        font-size: 20px;
+    }
+
+    .note2 {
+        animation: note-animate 5.5s ease-in-out forwards;
+        display: none;
+        color: #ffffff;
+        font-size: 20px;
     }
 }
 
@@ -185,6 +248,8 @@ nav {
         }
     }
 
+    /*Menu Hamburguesa*/
+
     .menu-btn {
         display: flex;
         justify-content: center;
@@ -278,6 +343,54 @@ nav {
     }
 }
 
+@media (max-width: 680px) {
+    /*Animacion para las notas mediaquerie*/
+
+    @keyframes note-animate {
+        0% {
+            opacity: 0;
+            transform: translateY(-21px);
+        }
+
+        20% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        40% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        60% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        80% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(21px);
+        }
+    }
+
+    .note {
+        padding: 0.8rem;
+
+        .note1 {
+            font-size: 15px;
+        }
+
+        .note2 {
+            font-size: 15px;
+        }
+    }
+}
+
 @media (max-width: 600px) {
     nav {
         .title-logo {
@@ -324,6 +437,50 @@ nav {
 }
 
 @media (max-width: 490px) {
+    /*Animacion para las notas mediaquerie*/
+
+    @keyframes note-animate {
+        0% {
+            opacity: 0;
+            transform: translateY(-19px);
+        }
+
+        20% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        40% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        60% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        80% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(19px);
+        }
+    }
+
+    .note {
+        .note1 {
+            font-size: 13px;
+        }
+
+        .note2 {
+            font-size: 13px;
+        }
+    }
+
     nav {
         .title-logo {
             h2 {
@@ -365,6 +522,16 @@ nav {
 }
 
 @media (max-width: 440px) {
+    .note {
+        .note1 {
+            font-size: 12px;
+        }
+
+        .note2 {
+            font-size: 12px;
+        }
+    }
+
     header {
         background: #245953;
     }
@@ -379,6 +546,50 @@ nav {
 }
 
 @media (max-width: 395px) {
+    /*Animacion para las notas mediaquerie*/
+
+    @keyframes note-animate {
+        0% {
+            opacity: 0;
+            transform: translateY(-17px);
+        }
+
+        20% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        40% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        60% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        80% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        100% {
+            opacity: 0;
+            transform: translateY(17px);
+        }
+    }
+
+    .note {
+        .note1 {
+            font-size: 11px;
+        }
+
+        .note2 {
+            font-size: 11px;
+        }
+    }
+
     nav {
         .title-logo {
             h2 {
@@ -398,7 +609,17 @@ nav {
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
+    .note {
+        .note1 {
+            font-size: 10px;
+        }
+
+        .note2 {
+            font-size: 10px;
+        }
+    }
+
     nav {
         .title-logo {
             h2 {

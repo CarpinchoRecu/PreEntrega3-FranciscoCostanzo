@@ -57,3 +57,27 @@ closeBtn.addEventListener('click', () => {
   offcanvas.classList.toggle('show');
   menuSpan.classList.toggle('hide');
 });
+
+// pasar de nota
+
+let currentText = 1;
+
+function noteAnimate() {
+  // Obtiene los elementos de texto
+  const text1 = document.querySelector(".note1");
+  const text2 = document.querySelector(".note2");
+
+  // Determina qué texto debe ser visible y cuál debe estar oculto
+  if (currentText === 1) {
+    text1.style.display = "none";
+    text2.style.display = "block";
+    currentText = 2;
+  } else {
+    text1.style.display = "block";
+    text2.style.display = "none";
+    currentText = 1;
+  }
+}
+
+// Inicia la animación cada 4 segundos
+setInterval(noteAnimate, 6000);

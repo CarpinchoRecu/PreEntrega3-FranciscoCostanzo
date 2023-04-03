@@ -15,13 +15,16 @@ body {
   animation: animation-pages 1.5s ease;
   opacity: 1; }
 
+/*color de nav*/
 header {
   background-color: #245953;
   max-width: 100%; }
 
+/*Menu Hamburguesa*/
 #menu-burger {
   display: none; }
 
+/*UI-BarraNav*/
 nav {
   display: flex;
   flex-direction: row;
@@ -75,6 +78,44 @@ nav {
       background-color: #d8d8d8;
       padding: 5px; }
 
+/*Animacion para las notas*/
+@keyframes note-animate {
+  0% {
+    opacity: 0;
+    transform: translateY(-26px); }
+  20% {
+    opacity: 1;
+    transform: translateY(0); }
+  40% {
+    opacity: 1;
+    transform: translateY(0); }
+  60% {
+    opacity: 1;
+    transform: translateY(0); }
+  80% {
+    opacity: 1;
+    transform: translateY(0); }
+  100% {
+    opacity: 0;
+    transform: translateY(26px); } }
+
+/*Notas abajo de la nav*/
+.note {
+  border-top: solid 2px #d8d8d8;
+  display: flex;
+  justify-content: center;
+  background-color: #000000;
+  padding: 1rem; }
+  .note .note1 {
+    animation: note-animate 5.5s ease-in-out forwards;
+    color: #ffffff;
+    font-size: 20px; }
+  .note .note2 {
+    animation: note-animate 5.5s ease-in-out forwards;
+    display: none;
+    color: #ffffff;
+    font-size: 20px; }
+
 /*Media Queries*/
 @media (max-width: 1400px) {
   nav .title-logo {
@@ -120,6 +161,7 @@ nav {
     font-size: 40px; }
   nav .buttons {
     display: none; }
+  /*Menu Hamburguesa*/
   .menu-btn {
     display: flex;
     justify-content: center;
@@ -187,6 +229,34 @@ nav {
     background-color: #ffffff;
     margin: 10px 0; } }
 
+@media (max-width: 680px) {
+  /*Animacion para las notas mediaquerie*/
+  @keyframes note-animate {
+    0% {
+      opacity: 0;
+      transform: translateY(-21px); }
+    20% {
+      opacity: 1;
+      transform: translateY(0); }
+    40% {
+      opacity: 1;
+      transform: translateY(0); }
+    60% {
+      opacity: 1;
+      transform: translateY(0); }
+    80% {
+      opacity: 1;
+      transform: translateY(0); }
+    100% {
+      opacity: 0;
+      transform: translateY(21px); } }
+  .note {
+    padding: 0.8rem; }
+    .note .note1 {
+      font-size: 15px; }
+    .note .note2 {
+      font-size: 15px; } }
+
 @media (max-width: 600px) {
   nav .title-logo h2 {
     font-size: 33px; }
@@ -211,6 +281,30 @@ nav {
     transform: translateX(-100%); } }
 
 @media (max-width: 490px) {
+  /*Animacion para las notas mediaquerie*/
+  @keyframes note-animate {
+    0% {
+      opacity: 0;
+      transform: translateY(-19px); }
+    20% {
+      opacity: 1;
+      transform: translateY(0); }
+    40% {
+      opacity: 1;
+      transform: translateY(0); }
+    60% {
+      opacity: 1;
+      transform: translateY(0); }
+    80% {
+      opacity: 1;
+      transform: translateY(0); }
+    100% {
+      opacity: 0;
+      transform: translateY(19px); } }
+  .note .note1 {
+    font-size: 13px; }
+  .note .note2 {
+    font-size: 13px; }
   nav .title-logo h2 {
     font-size: 30px; }
   nav .title-logo img {
@@ -232,12 +326,40 @@ nav {
     font-size: 20px; } }
 
 @media (max-width: 440px) {
+  .note .note1 {
+    font-size: 12px; }
+  .note .note2 {
+    font-size: 12px; }
   header {
     background: #245953; }
   nav .title-logo h2 {
     font-size: 24px; } }
 
 @media (max-width: 395px) {
+  /*Animacion para las notas mediaquerie*/
+  @keyframes note-animate {
+    0% {
+      opacity: 0;
+      transform: translateY(-17px); }
+    20% {
+      opacity: 1;
+      transform: translateY(0); }
+    40% {
+      opacity: 1;
+      transform: translateY(0); }
+    60% {
+      opacity: 1;
+      transform: translateY(0); }
+    80% {
+      opacity: 1;
+      transform: translateY(0); }
+    100% {
+      opacity: 0;
+      transform: translateY(17px); } }
+  .note .note1 {
+    font-size: 11px; }
+  .note .note2 {
+    font-size: 11px; }
   nav .title-logo h2 {
     font-size: 22px; }
   nav .title-logo img {
@@ -247,7 +369,11 @@ nav {
     width: 3rem;
     height: 3rem; } }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
+  .note .note1 {
+    font-size: 10px; }
+  .note .note2 {
+    font-size: 10px; }
   nav .title-logo h2 {
     font-size: 20px; }
   nav .title-logo img {
@@ -478,18 +604,9 @@ footer {
 
 #grid-index {
   display: grid;
-  grid-template-areas: "note" "section-index1" "section-index2";
+  grid-template-areas: "section-index1" "section-index2";
   grid-template-columns: 100%;
-  grid-template-rows: auto auto auto; }
-  #grid-index .note {
-    display: flex;
-    justify-content: center;
-    grid-area: note;
-    background-color: #000000;
-    padding: 1rem; }
-    #grid-index .note h2 {
-      color: #ffffff;
-      font-size: 20px; }
+  grid-template-rows: auto auto; }
   #grid-index .section-index1 {
     padding: 59px;
     gap: 200px;
@@ -628,10 +745,6 @@ footer {
   animation: aparecer 1s forwards ease-in-out; }
 
 @media (max-width: 1700px) {
-  #grid-index .note {
-    padding: 0.8rem; }
-    #grid-index .note h2 {
-      font-size: 18px; }
   #grid-index .section-index1 {
     padding: 54px;
     gap: 90px; }
@@ -666,8 +779,6 @@ footer {
       transform: translate(-1rem, -1rem); } }
 
 @media (max-width: 1350px) {
-  #grid-index .note h2 {
-    font-size: 16px; }
   #grid-index .section-index1 {
     gap: 53px; }
   .card .container {
@@ -699,8 +810,6 @@ footer {
       transform: translate(-1rem, -1rem); } }
 
 @media (max-width: 1150px) {
-  #grid-index .note h2 {
-    font-size: 12px; }
   #grid-index .section-index1 {
     gap: 53px; }
   .card .container {
@@ -732,8 +841,6 @@ footer {
       transform: translate(-1rem, -1rem); } }
 
 @media (max-width: 1150px) {
-  #grid-index .note h2 {
-    font-size: 12px; }
   #grid-index .section-index1 {
     gap: 53px; }
   #grid-index .section-index2 {
@@ -765,8 +872,6 @@ footer {
     transform: translate(-1rem, -1rem); } }
 
 @media (max-width: 680px) {
-  #grid-index .note h2 {
-    font-size: 12px; }
   #grid-index .section-index1 {
     gap: 53px; }
   #grid-index .section-index2 {
@@ -801,8 +906,6 @@ footer {
       transform: translate(1.5rem, 1.5rem); }
     .card .container:hover .box {
       transform: translate(-1.5rem, -1.5rem); }
-  #grid-index .note h2 {
-    font-size: 10px; }
   #grid-index .section-index1 {
     gap: 40px;
     padding: 29px; }
@@ -810,8 +913,8 @@ footer {
     gap: 20px;
     padding: 2rem; }
   .card2 .container {
-    height: 8rem;
-    width: 8rem; }
+    height: 8.6rem;
+    width: 8.6rem; }
     .card2 .container .box .box-txt h2 {
       font-size: 10px; }
     .card2 .container .box .box-txt .line-img {
@@ -823,3 +926,45 @@ footer {
       transform: translate(1rem, 1rem); }
     .card2 .container:hover .box {
       transform: translate(-0.6rem, -0.6rem); } }
+
+.sobre-nosotros section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px; }
+  .sobre-nosotros section div {
+    display: flex;
+    align-items: center;
+    flex-direction: column; }
+    .sobre-nosotros section div h2 {
+      font-size: 50px; }
+    .sobre-nosotros section div div {
+      width: 100%;
+      border-radius: 9px;
+      height: 4px;
+      background-color: #ffffff; }
+  .sobre-nosotros section div p {
+    font-weight: bold;
+    font-size: 30px; }
+
+@media (max-width: 400px) {
+  .sobre-nosotros section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 18px; }
+    .sobre-nosotros section div {
+      display: flex;
+      align-items: center;
+      flex-direction: column; }
+      .sobre-nosotros section div h2 {
+        font-size: 50px; }
+      .sobre-nosotros section div div {
+        width: 100%;
+        border-radius: 9px;
+        height: 4px;
+        background-color: #ffffff; }
+    .sobre-nosotros section div p {
+      font-size: 30px; } }
