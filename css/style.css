@@ -968,3 +968,71 @@ footer {
         background-color: #ffffff; }
     .sobre-nosotros section div p {
       font-size: 30px; } }
+
+.card-sale {
+  background-color: #D8D8D8;
+  position: relative;
+  height: 26rem;
+  width: 22rem;
+  perspective: 1000px;
+  border-radius: 19px; }
+  .card-sale .front {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 19px;
+    background-color: #245953;
+    backface-visibility: hidden;
+    transition: transform 0.5s ease-in-out;
+    transform: rotateY(0deg); }
+    .card-sale .front .front-img {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .card-sale .front .front-img img {
+        object-fit: contain;
+        width: 90%;
+        height: 100%; }
+    .card-sale .front .txt-sale-front {
+      position: relative;
+      bottom: 17px;
+      font-size: 30px; }
+  .card-sale .back {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 19px;
+    background-color: #245953;
+    backface-visibility: hidden;
+    transition: transform 0.5s ease-in-out;
+    transform: rotateY(180deg); }
+    .card-sale .back .back-img {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      .card-sale .back .back-img img {
+        object-fit: contain;
+        width: 70%;
+        height: 70%; }
+    .card-sale .back .txt1-sale-back {
+      position: relative;
+      bottom: 49px;
+      font-size: 23px; }
+    .card-sale .back .txt2-sale-back {
+      position: relative;
+      bottom: 30px;
+      font-size: 20px; }
+    .card-sale .back button {
+      font-size: 25px; }
+  .card-sale[data-state="back"] .front {
+    transform: rotateY(-180deg); }
+  .card-sale[data-state="back"] .back {
+    transform: rotateY(0deg); }

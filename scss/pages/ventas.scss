@@ -1,0 +1,94 @@
+.card-sale {
+    background-color: #D8D8D8;
+    position: relative;
+    height: 26rem;
+    width: 22rem;
+    perspective: 1000px;
+    border-radius: 19px;
+
+    .front {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 19px;
+        background-color: #245953;
+        backface-visibility: hidden;
+        transition: transform 0.5s ease-in-out;
+        transform: rotateY(0deg);
+
+        .front-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                object-fit: contain;
+                width: 90%;
+                height: 100%;
+            }
+        }
+
+        .txt-sale-front {
+            position: relative;
+            bottom: 17px;
+            font-size: 30px;
+        }
+    }
+
+    .back {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 19px;
+        background-color: #245953;
+        backface-visibility: hidden;
+        transition: transform 0.5s ease-in-out;
+        transform: rotateY(180deg);
+
+        .back-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            img {
+                object-fit: contain;
+                width: 70%;
+                height: 70%;
+            }
+
+        }
+
+        .txt1-sale-back{
+            position: relative;
+            bottom: 49px;
+            font-size: 23px;
+        }
+
+        .txt2-sale-back{
+            position: relative;
+            bottom: 30px;
+            font-size: 20px;
+        }
+
+        button {
+            font-size: 25px;
+        }
+    }
+
+    &[data-state="back"] .front {
+        transform: rotateY(-180deg);
+    }
+
+    &[data-state="back"] .back {
+        transform: rotateY(0deg);
+    }
+
+}
