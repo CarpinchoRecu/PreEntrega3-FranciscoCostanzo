@@ -33,5 +33,21 @@ const Phones = [
         memory: "220gb",
         bateryUseful: "100%",
         price: 970
+    },
+    {
+        id: 5,
+        brand: "Iphone",
+        model: "12",
+        memory: "200gb",
+        bateryUseful: "97%",
+        price: 890
+    },
+    {
+        id: 6,
+        brand: "Iphone",
+        model: "X",
+        memory: "150gb",
+        bateryUseful: "93%",
+        price: 880
     }
 ]

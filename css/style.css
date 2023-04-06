@@ -1011,6 +1011,12 @@ footer {
     font-size: 35px;
     right: 74.2%;
     bottom: 72%; }
+  .cartOffCanvas #displayData {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    font-weight: bold; }
   .cartOffCanvas button {
     position: absolute;
     font-size: 40px;

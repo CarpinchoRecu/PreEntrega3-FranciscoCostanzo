@@ -1,32 +1,24 @@
-const cart = []
+const btnAggCartList = document.querySelectorAll('.btnAggCart');
+const displayData = document.querySelector('#displayData');
+const totalDisplay = document.querySelector('#totalPrice');
+let total = 0;
 
-const descendingOrder = () => {
-    Phones.sort((a, b) => b.price - a.price);
-    listOrder();
-};
-
-const listOrder = () => {
-    const listOrder = productos.map((phone) => {
-        return "- " + phone.model + " $" + phone.price;
-    });
-    alert("Lista de Precios: " + "\n\n" + listOrder.join("\n"));
-    comprarProductos(listOrder);
-};
-
-const buyPhone = (Phones) => {
-    let model = document.querySelector(".btn_carrito")
-    model.addEventListener("click", function (){
-        if (cart) {
-            
-        }
-    })
-    let price = 0
-
-    do {
-        model = addEventListener("")
-    } while (condition);
+function searchPhones(id) {
+  const phone = Phones.find(phone => phone.id === id);
+  if (phone) {
+    const { model, price } = phone;
+    const data = `Modelo: ${model}, Precio: $${price.toFixed(2)}`;
+    displayData.innerHTML += data + "<br>";
+    total += price;
+    totalDisplay.innerHTML = `Total: $${total.toFixed(2)}`;
+  } else {
+    console.log(`No se encontró el teléfono con ID ${id}`);
+  }
 }
 
-const addCart = (phone.id, phone.model, phone.price) => {
-
-}
+btnAggCartList.forEach(btnAggCart => {
+  btnAggCart.addEventListener('click', () => {
+    const phoneId = btnAggCart.dataset.phoneId;
+    searchPhones(parseInt(phoneId));
+  });
+});
