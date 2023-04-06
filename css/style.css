@@ -204,7 +204,7 @@ nav {
     right: -80%;
     width: 70%;
     height: 100%;
-    background-color: #161616af;
+    background-color: #000000af;
     padding: 50px 20px;
     transition: transform 0.6s ease;
     z-index: 10; }
@@ -969,87 +969,18 @@ footer {
     .sobre-nosotros section div p {
       font-size: 30px; } }
 
-.card-sale {
-  background-color: #D8D8D8;
-  position: relative;
-  height: 26rem;
-  width: 22rem;
-  perspective: 1000px;
-  border-radius: 19px; }
-  .card-sale .front {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 19px;
-    background-color: #245953;
-    backface-visibility: hidden;
-    transition: transform 0.5s ease-in-out;
-    transform: rotateY(0deg); }
-    .card-sale .front .front-img {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .card-sale .front .front-img img {
-        border-radius: 60px;
-        object-fit: contain;
-        width: 90%;
-        height: 100%; }
-    .card-sale .front .txt-sale-front {
-      position: relative;
-      bottom: 17px;
-      font-size: 30px; }
-  .card-sale .back {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    border-radius: 19px;
-    background-color: #245953;
-    backface-visibility: hidden;
-    transition: transform 0.5s ease-in-out;
-    transform: rotateY(180deg); }
-    .card-sale .back .back-img {
-      display: flex;
-      justify-content: center;
-      align-items: center; }
-      .card-sale .back .back-img img {
-        object-fit: contain;
-        width: 70%;
-        height: 70%; }
-    .card-sale .back .txt1-sale-back {
-      position: relative;
-      bottom: 49px;
-      font-size: 23px; }
-    .card-sale .back .txt2-sale-back {
-      position: relative;
-      bottom: 30px;
-      font-size: 20px; }
-    .card-sale .back button {
-      font-size: 25px; }
-  .card-sale[data-state="back"] .front {
-    transform: rotateY(-180deg); }
-  .card-sale[data-state="back"] .back {
-    transform: rotateY(0deg); }
-
 .cartBtn {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 4.7rem;
-  height: 4.7rem;
+  width: 4.3rem;
+  height: 4.3rem;
   background-color: #ffffff;
   border-radius: 50%;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-  position: fixed;
-  top: 20px;
-  right: 20px;
+  position: absolute;
+  top: 1.5%;
+  right: 72%;
   z-index: 11;
   cursor: pointer; }
   .cartBtn img {
@@ -1062,30 +993,142 @@ footer {
   right: -80%;
   width: 70%;
   height: 100%;
-  background-color: #161616af;
+  background-color: #6b6565f3;
   padding: 50px 20px;
   transition: transform 0.6s ease;
-  z-index: 10; }
-  .cartOffCanvas a {
-    display: block;
-    font-size: 25px;
-    margin-bottom: 20px;
-    color: #ffffff;
-    text-decoration: none;
-    height: auto;
-    width: 35%; }
+  z-index: 12; }
+  .cartOffCanvas .title-cart {
+    position: absolute;
+    right: 47%;
+    font-size: 80px; }
+  .cartOffCanvas .txt-prod {
+    position: absolute;
+    font-size: 35px;
+    right: 75%;
+    bottom: 80%; }
+  .cartOffCanvas .txt-price {
+    position: absolute;
+    font-size: 35px;
+    right: 74.2%;
+    bottom: 72%; }
+  .cartOffCanvas button {
+    position: absolute;
+    font-size: 40px;
+    bottom: 55%;
+    right: 50%; }
+  .cartOffCanvas.show {
+    transform: translateX(-110%); }
+  .cartOffCanvas .closeCartBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer; }
+  .cartOffCanvas .line-cart {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #000000;
+    margin: 10px 0;
+    bottom: 50%; }
 
-.cartOffCanvas.show {
-  transform: translateX(-110%); }
-
-.closeCartBtn {
+.ventas {
   display: flex;
-  justify-content: center;
   align-items: center;
-  cursor: pointer; }
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 17px;
+  padding: 20px; }
+  .ventas .card-sale {
+    background-color: #d8d8d8;
+    position: relative;
+    height: 26rem;
+    width: 22rem;
+    perspective: 1000px;
+    border-radius: 19px; }
+    .ventas .card-sale .front {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 19px;
+      background-color: #245953;
+      backface-visibility: hidden;
+      transition: transform 0.5s ease-in-out;
+      transform: rotateY(0deg);
+      gap: 10px; }
+      .ventas .card-sale .front .front-img {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .ventas .card-sale .front .front-img img {
+          border-radius: 60px;
+          object-fit: contain;
+          width: 90%;
+          height: 100%; }
+      .ventas .card-sale .front .txt-sale-front {
+        position: relative;
+        bottom: 17px;
+        font-size: 30px; }
+    .ventas .card-sale .back {
+      position: absolute;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      border-radius: 19px;
+      background-color: #245953;
+      backface-visibility: hidden;
+      transition: transform 0.5s ease-in-out;
+      transform: rotateY(180deg); }
+      .ventas .card-sale .back .back-img {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .ventas .card-sale .back .back-img img {
+          object-fit: contain;
+          width: 70%;
+          height: 70%; }
+      .ventas .card-sale .back .txt1-sale-back {
+        position: relative;
+        bottom: 49px;
+        font-size: 23px; }
+      .ventas .card-sale .back .txt2-sale-back {
+        position: relative;
+        bottom: 30px;
+        font-size: 20px; }
+      .ventas .card-sale .back button {
+        font-size: 25px; }
+    .ventas .card-sale[data-state="back"] .front {
+      transform: rotateY(-180deg); }
+    .ventas .card-sale[data-state="back"] .back {
+      transform: rotateY(0deg); }
 
-.line-cart {
-  width: 100%;
-  height: 2px;
-  background-color: #ffffff;
-  margin: 10px 0; }
+@media (max-width: 1900px) {
+  .cartBtn {
+    width: 4rem;
+    height: 4rem;
+    top: 1.5%;
+    right: 72%; }
+    .cartBtn img {
+      height: 64%;
+      width: 64%; }
+  .cartOffCanvas {
+    top: 0;
+    right: -80%;
+    width: 70%;
+    height: 100%;
+    padding: 50px 20px; }
+    .cartOffCanvas a {
+      font-size: 25px;
+      margin-bottom: 20px;
+      height: auto;
+      width: 35%; }
+    .cartOffCanvas .line-cart {
+      width: 100%;
+      height: 2px;
+      margin: 10px 0; } }
