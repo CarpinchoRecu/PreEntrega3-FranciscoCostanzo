@@ -1,227 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Productos</title>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Productos</title>
+    <!--Linkeo de CSS-->
+    <link rel="stylesheet" href="../css/style.css" />
 
-  <!--Linkeo de CSS-->
-  <link rel="stylesheet" href="../css/style.css" />
+    <!--Linkeo de Fuente-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <!--Linkeo de Fuente-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
-</head>
+  <body>
+    <header class="grid-header">
+      <nav>
+        <div class="title-logo">
+          <a id="logo" class="animate_logo" href="../index.html"
+            ><img src="../images/logo.png" alt="logo"
+          /></a>
+          <h2>Nuestro Stock</h2>
+        </div>
+        <div class="buttons">
+          <div><a href="../index.html">Inicio</a></div>
+          <div><a href="../pages/contactanos.html">Contactanos</a></div>
+          <div><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></div>
+          <div><a href="../pages/ventas.html">Productos</a></div>
+        </div>
+      </nav>
 
-<body>
-  <header class="grid-header">
-    <nav>
-      <div class="title-logo">
-        <a id="logo" class="animate_logo" href="../index.html"><img src="../images/logo.png" alt="logo" /></a>
-        <h2>Nuestro Stock</h2>
+      <div>
+        <div class="cartBtn">
+          <img src="../images/logo-cart.jpeg" alt="logo-cart" />
+        </div>
+        <div class="cartOffCanvas">
+          <div class="closeCartBtn"></div>
+          <h2 class="title-cart">Carrito</h2>
+          <h2 class="txt-prod">
+            <div id="displayData"></div>
+          </h2>
+
+          <h2 class="txt-price">
+            <div id="totalPrice"></div>
+          </h2>
+
+          <button>Comprar</button>
+          <div class="line-cart"></div>
+        </div>
       </div>
-      <div class="buttons">
-        <div><a href="../index.html">Inicio</a></div>
-        <div><a href="../pages/contactanos.html">Contactanos</a></div>
-        <div><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></div>
-        <div><a href="../pages/ventas.html">Productos</a></div>
-      </div>
-    </nav>
 
-    <div>
-      <div class="cartBtn">
-        <img src="../images/logo-cart.jpeg" alt="logo-cart">
+      <div id="menu-burger">
+        <div class="menu-btn">
+          <span></span>
+        </div>
+        <div class="offcanvas">
+          <div class="close-btn"></div>
+          <div><a href="../index.html">Inicio</a></div>
+          <div><a href="../pages/contactanos.html">Contactanos</a></div>
+          <div><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></div>
+          <div><a href="../pages/ventas.html">Productos</a></div>
+          <div class="menu-line"></div>
+        </div>
       </div>
-      <div class="cartOffCanvas">
-        <div class="closeCartBtn"></div>
-        <h2 class="title-cart">Carrito</h2>
-        <h2 class="txt-prod">Productos:<div id="displayData"></div>
+
+      <div class="note">
+        <h2 class="note1">
+          IPHONES EN LAS MEJORES CONDICIONES Y CON MUY BUEN PRECIO
         </h2>
-
-        <h2 class="txt-price">Precio final:<div id="totalPrice"></div></h2>
-        
-        <button>Comprar</button>
-        <div class="line-cart"></div>
+        <h2 class="note2">NO TE LOS PIERDAS!</h2>
       </div>
-    </div>
+    </header>
 
-    <div id="menu-burger">
-      <div class="menu-btn">
-        <span></span>
-      </div>
-      <div class="offcanvas">
-        <div class="close-btn"></div>
-        <div><a href="../index.html">Inicio</a></div>
-        <div><a href="../pages/contactanos.html">Contactanos</a></div>
-        <div><a href="../pages/sobrenosotros.html">Sobre Nosotros</a></div>
-        <div><a href="../pages/ventas.html">Productos</a></div>
-        <div class="menu-line"></div>
-      </div>
-    </div>
-
-    <div class="note">
-      <h2 class="note1">
-        IPHONES EN LAS MEJORES CONDICONES Y CON MUY BUEN PRECIO
-      </h2>
-      <h2 class="note2">NO TE LOS PIERDAS!</h2>
-    </div>
-  </header>
-
-  <main class="grid-main">
-    <section class="ventas">
-      <div class="card-sale btnAggCart" data-state="front" data-phone-id="1">
-        <div class="front">
-          <div class="front-img">
-            <img src="../images/prodructs/iphone-6.jpeg" alt="img-product" />
+    <main class="grid-main">
+      <section class="ventas">
+        <div class="card-sale" data-state="front">
+          <div class="front">
+            <div class="front-img">
+              <img src="../images/prodructs/iphone-6.jpeg" alt="img-product" />
+            </div>
+            <div>
+              <h2 class="txt-sale-front">Iphone 6</h2>
+            </div>
           </div>
-          <div>
-            <h2 class="txt-sale-front">Iphone 6</h2>
+          <div class="back">
+            <div class="back-img">
+              <img src="../images/prodructs/iphone-6.jpeg" alt="img-product" />
+            </div>
+            <h2 class="txt1-sale-back">Caracteristicas:</h2>
+            <h2 class="txt2-sale-back">datos</h2>
+            <button class="btnAggCart" data-phone-id="1">
+              Agregar al Carrito
+            </button>
           </div>
         </div>
-        <div class="back">
-          <div class="back-img">
-            <img src="../images/prodructs/iphone-6.jpeg" alt="img-product" />
+        <div class="card-sale" data-state="front">
+          <div class="front">
+            <div class="front-img">
+              <img src="../images/prodructs/iphone-7.jpeg" alt="img-product" />
+            </div>
+            <div>
+              <h2 class="txt-sale-front">Iphone 7</h2>
+            </div>
           </div>
-          <h2 class="txt1-sale-back">Caracteristicas:</h2>
-          <h2 class="txt2-sale-back">datos</h2>
-          <button>Agregar al Carrito</button>
-        </div>
-      </div>
-      <div class="card-sale btnAggCart" data-state="front" data-phone-id="2">
-        <div class="front">
-          <div class="front-img">
-            <img src="../images/prodructs/iphone-7.jpeg" alt="img-product" />
-          </div>
-          <div>
-            <h2 class="txt-sale-front">Iphone 7</h2>
-          </div>
-        </div>
-        <div class="back">
-          <div class="back-img">
-            <img src="../images/prodructs/iphone-7.jpeg" alt="img-product" />
-          </div>
-          <h2 class="txt1-sale-back">Caracteristicas:</h2>
-          <h2 class="txt2-sale-back">datos</h2>
-          <button>Agregar al Carrito</button>
-        </div>
-      </div>
-      <div class="card-sale btnAggCart" data-state="front" data-phone-id="3">
-        <div class="front">
-          <div class="front-img">
-            <img src="../images/prodructs/iphone-8.jpeg" alt="img-product" />
-          </div>
-          <div>
-            <h2 class="txt-sale-front">Iphone 8</h2>
+          <div class="back">
+            <div class="back-img">
+              <img src="../images/prodructs/iphone-7.jpeg" alt="img-product" />
+            </div>
+            <h2 class="txt1-sale-back">Caracteristicas:</h2>
+            <h2 class="txt2-sale-back">datos</h2>
+            <button class="btnAggCart" data-phone-id="2">
+              Agregar al Carrito
+            </button>
           </div>
         </div>
-        <div class="back">
-          <div class="back-img">
-            <img src="../images/prodructs/iphone-8.jpeg" alt="img-product" />
+        <div class="card-sale" data-state="front">
+          <div class="front">
+            <div class="front-img">
+              <img src="../images/prodructs/iphone-8.jpeg" alt="img-product" />
+            </div>
+            <div>
+              <h2 class="txt-sale-front">Iphone 8</h2>
+            </div>
           </div>
-          <h2 class="txt1-sale-back">Caracteristicas:</h2>
-          <h2 class="txt2-sale-back">datos</h2>
-          <button>Agregar al Carrito</button>
-        </div>
-      </div>
-      <div class="card-sale btnAggCart" data-state="front" data-phone-id="5">
-        <div class="front">
-          <div class="front-img">
-            <img src="../images/prodructs/iphone-12.jpeg" alt="img-product" />
-          </div>
-          <div>
-            <h2 class="txt-sale-front">Iphone 12</h2>
-          </div>
-        </div>
-        <div class="back">
-          <div class="back-img">
-            <img src="../images/prodructs/iphone-12.jpeg" alt="img-product" />
-          </div>
-          <h2 class="txt1-sale-back">Caracteristicas:</h2>
-          <h2 class="txt2-sale-back">datos</h2>
-          <button>Agregar al Carrito</button>
-        </div>
-      </div>
-      <div class="card-sale btnAggCart" data-state="front" data-phone-id="6">
-        <div class="front">
-          <div class="front-img">
-            <img src="../images/prodructs/iphone-x.jpeg" alt="img-product" />
-          </div>
-          <div>
-            <h2 class="txt-sale-front">Iphone X</h2>
+          <div class="back">
+            <div class="back-img">
+              <img src="../images/prodructs/iphone-8.jpeg" alt="img-product" />
+            </div>
+            <h2 class="txt1-sale-back">Caracteristicas:</h2>
+            <h2 class="txt2-sale-back">datos</h2>
+            <button class="btnAggCart" data-phone-id="3">
+              Agregar al Carrito
+            </button>
           </div>
         </div>
-        <div class="back">
-          <div class="back-img">
-            <img src="../images/prodructs/iphone-x.jpeg" alt="img-product" />
+        <div class="card-sale btnAggCart" data-state="front">
+          <div class="front">
+            <div class="front-img">
+              <img src="../images/prodructs/iphone-12.jpeg" alt="img-product" />
+            </div>
+            <div>
+              <h2 class="txt-sale-front">Iphone 12</h2>
+            </div>
           </div>
-          <h2 class="txt1-sale-back">Caracteristicas:</h2>
-          <h2 class="txt2-sale-back">datos</h2>
-          <button>Agregar al Carrito</button>
+          <div class="back">
+            <div class="back-img">
+              <img src="../images/prodructs/iphone-12.jpeg" alt="img-product" />
+            </div>
+            <h2 class="txt1-sale-back">Caracteristicas:</h2>
+            <h2 class="txt2-sale-back">datos</h2>
+            <button class="btnAggCart" data-phone-id="5">
+              Agregar al Carrito
+            </button>
+          </div>
         </div>
-      </div>
-      <div class="card-sale btnAggCart" data-state="front" data-phone-id="4">
-        <div class="front">
-          <div class="front-img">
-            <img src="../images/prodructs/iphone-14.jpeg" alt="img-product" />
+        <div class="card-sale" data-state="front">
+          <div class="front">
+            <div class="front-img">
+              <img src="../images/prodructs/iphone-x.jpeg" alt="img-product" />
+            </div>
+            <div>
+              <h2 class="txt-sale-front">Iphone X</h2>
+            </div>
           </div>
-          <div>
-            <h2 class="txt-sale-front">Iphone 14</h2>
+          <div class="back">
+            <div class="back-img">
+              <img src="../images/prodructs/iphone-x.jpeg" alt="img-product" />
+            </div>
+            <h2 class="txt1-sale-back">Caracteristicas:</h2>
+            <h2 class="txt2-sale-back">datos</h2>
+            <button class="btnAggCart" data-phone-id="6">
+              Agregar al Carrito
+            </button>
           </div>
         </div>
-        <div class="back">
-          <div class="back-img">
-            <img src="../images/prodructs/iphone-14.jpeg" alt="img-product" />
+        <div class="card-sale" data-state="front">
+          <div class="front">
+            <div class="front-img">
+              <img src="../images/prodructs/iphone-14.jpeg" alt="img-product" />
+            </div>
+            <div>
+              <h2 class="txt-sale-front">Iphone 14</h2>
+            </div>
           </div>
-          <h2 class="txt1-sale-back">Caracteristicas:</h2>
-          <h2 class="txt2-sale-back">datos</h2>
-          <button>Agregar al Carrito</button>
+          <div class="back">
+            <div class="back-img">
+              <img src="../images/prodructs/iphone-14.jpeg" alt="img-product" />
+            </div>
+            <h2 class="txt1-sale-back">Caracteristicas:</h2>
+            <h2 class="txt2-sale-back">datos</h2>
+            <button class="btnAggCart" data-phone-id="4">
+              Agregar al Carrito
+            </button>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer class="grid-footer">
-    <div class="reserved">
-      <h2>ALL RIGHT RESERVED</h2>
-      <div class="footer-line"></div>
-    </div>
-    <div class="network">
-      <div>
-        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><img src="../images/logo-tk.jpeg"
-            alt="logo-tk" /></a>
+    <footer class="grid-footer">
+      <div class="reserved">
+        <h2>ALL RIGHT RESERVED</h2>
+        <div class="footer-line"></div>
       </div>
-      <div>
-        <a href="https://www.instagram.com/iphone_companystore/" target="_blank" rel="noopener noreferrer"><img
-            src="../images/logo-ig.jpeg" alt="logo-ig" /></a>
+      <div class="network">
+        <div>
+          <a
+            href="https://www.tiktok.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="../images/logo-tk.jpeg" alt="logo-tk"
+          /></a>
+        </div>
+        <div>
+          <a
+            href="https://www.instagram.com/iphone_companystore/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="../images/logo-ig.jpeg" alt="logo-ig"
+          /></a>
+        </div>
+        <div>
+          <a
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="../images/logo-fb.jpeg" alt="logo-fb"
+          /></a>
+        </div>
+        <div>
+          <a
+            href="https://www.whatsapp.com/?lang=es"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="../images/logo-wp.jpeg" alt="logo-wp"
+          /></a>
+        </div>
       </div>
-      <div>
-        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="../images/logo-fb.jpeg"
-            alt="logo-fb" /></a>
-      </div>
-      <div>
-        <a href="https://www.whatsapp.com/?lang=es" target="_blank" rel="noopener noreferrer"><img
-            src="../images/logo-wp.jpeg" alt="logo-wp" /></a>
-      </div>
-    </div>
-  </footer>
+    </footer>
+    <!--Linkeo de Script animacion card-sale-->
+    <script src="../scripts/ui_components_script/card-sale.js"></script>
 
-  <!--Linkeo Scripts Funcionamiento Carrito-->
-  <script src="../scripts/e-commerce/stock.js"></script>
-  <script src="../scripts/e-commerce/e-commerce.js"></script>
+    <!--Linkeo Scripts Funcionamiento Carrito-->
+    <script src="../scripts/e-commerce/stock.js"></script>
+    <script src="../scripts/e-commerce/e-commerce.js"></script>
 
+    <!--Linkeo de Script ui_e-commerce -->
+    <script src="../scripts/ui_components_script/cart.js"></script>
 
-  <!--Linkeo de Script ui_e-commerce -->
-  <script src="../scripts/ui_components_script/cart.js"></script>
-
-  <!--Linkeo de Script de la barra de navegacion-->
-  <script src="../scripts/ui_components_script/nav.js"></script>
-
-
-  <!--Linkeo de Script animacion card-sale-->
-  <script src="../scripts/ui_components_script/card-sale.js"></script>
-</body>
-
+    <!--Linkeo de Script de la barra de navegacion-->
+    <script src="../scripts/ui_components_script/nav.js"></script>
+  </body>
 </html>
