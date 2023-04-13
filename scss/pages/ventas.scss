@@ -10,7 +10,7 @@
     position: absolute;
     top: 1.5%;
     right: 72%;
-    z-index: 11;
+    z-index: 20;
     cursor: pointer;
 
     img {
@@ -28,7 +28,7 @@
     background-color: #6b6565f3;
     padding: 50px 20px;
     transition: transform 0.6s ease;
-    z-index: 12;
+    z-index: 9;
 
     .title-cart {
         position: absolute;
@@ -104,6 +104,7 @@
         perspective: 1000px;
         border-radius: 19px;
         cursor: pointer;
+        box-shadow: 2px 2px 4px;
 
         .front {
             position: absolute;
@@ -119,6 +120,7 @@
             transition: transform 0.5s ease-in-out;
             transform: rotateY(0deg);
             gap: 10px;
+            box-shadow: 3px 3px 8px;
 
             .front-img {
                 display: flex;
@@ -138,6 +140,10 @@
                 bottom: 17px;
                 font-size: 30px;
             }
+
+            &:hover{
+                box-shadow: 5px 5px 13px;
+            }
         }
 
         .back {
@@ -153,6 +159,11 @@
             backface-visibility: hidden;
             transition: transform 0.5s ease-in-out;
             transform: rotateY(180deg);
+            box-shadow: 3px 3px 8px;
+
+            &:hover{
+                box-shadow: 5px 5px 13px;
+            }
 
             .back-img {
                 display: flex;
@@ -238,10 +249,12 @@
         background-color: #ffffff;
         border-radius: 50%;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-        position: absolute;
-        top: 1.5%;
-        right: 72%;
-        z-index: 11;
+        position: fixed;
+        width: 3.6rem;
+        height: 3.6rem;
+        top: 10%;
+        right: 4.7%;
+        z-index: 28;
         cursor: pointer;
     
         img {
@@ -259,7 +272,7 @@
         background-color: #6b6565f3;
         padding: 50px 20px;
         transition: transform 0.6s ease;
-        z-index: 12;
+        z-index: 27;
     
         .title-cart {
             position: absolute;
@@ -292,12 +305,12 @@
     
     
         button {
-            height: 5rem;
-            width: 5rem;
+            height: 5.7rem;
+            width: 10rem;
             position: absolute;
             font-size: 24px;
-            top: 27rem;
-            left: 1rem;
+            top: 29rem;
+            left: 3.7rem;
         }
     
         &.show {

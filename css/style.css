@@ -61,8 +61,7 @@ nav {
   nav .buttons {
     display: flex;
     justify-content: space-evenly;
-    align-items: center;
-    /*Animacion de Botones*/ }
+    align-items: center; }
     nav .buttons div {
       padding: 2rem; }
     nav .buttons a {
@@ -70,13 +69,11 @@ nav {
       font-size: 27px;
       font-weight: bold;
       color: #000000;
-      transition: border 0.1s ease-in;
-      padding: 5px; }
-    nav .buttons a:hover {
-      border: 2px solid #ffffff;
-      border-radius: 20px;
-      background-color: #d8d8d8;
-      padding: 5px; }
+      transition: 0.08s ease-in-out;
+      padding: 10px;
+      /*Animacion de Botones*/ }
+      nav .buttons a:hover {
+        border-bottom: solid 2px #d8d8d8; }
 
 /*Animacion para las notas*/
 @keyframes note-animate {
@@ -174,7 +171,7 @@ nav {
     position: fixed;
     top: 20px;
     right: 20px;
-    z-index: 11;
+    z-index: 30;
     cursor: pointer; }
   .menu-btn:before,
   .menu-btn:after,
@@ -207,7 +204,7 @@ nav {
     background-color: #000000af;
     padding: 50px 20px;
     transition: transform 0.6s ease;
-    z-index: 10; }
+    z-index: 29; }
     .offcanvas a {
       display: block;
       font-size: 25px;
@@ -215,7 +212,10 @@ nav {
       color: #ffffff;
       text-decoration: none;
       height: auto;
-      width: 35%; }
+      width: 35%;
+      /*Animacion de Botones*/ }
+      .offcanvas a:hover {
+        border-bottom: solid 2px #d8d8d8; }
   .offcanvas.show {
     transform: translateX(-110%); }
   .close-btn {
@@ -407,7 +407,7 @@ body {
     grid-area: footer; }
 
 footer {
-  background-color: #D8D8D8;
+  background-color: #d8d8d8;
   display: flex;
   flex-direction: column;
   gap: 17px; }
@@ -981,7 +981,7 @@ footer {
   position: absolute;
   top: 1.5%;
   right: 72%;
-  z-index: 11;
+  z-index: 20;
   cursor: pointer; }
   .cartBtn img {
     height: 68%;
@@ -996,7 +996,7 @@ footer {
   background-color: #6b6565f3;
   padding: 50px 20px;
   transition: transform 0.6s ease;
-  z-index: 12; }
+  z-index: 9; }
   .cartOffCanvas .title-cart {
     position: absolute;
     right: 47%;
@@ -1051,7 +1051,8 @@ footer {
     width: 22rem;
     perspective: 1000px;
     border-radius: 19px;
-    cursor: pointer; }
+    cursor: pointer;
+    box-shadow: 2px 2px 4px; }
     .ventas .card-sale .front {
       position: absolute;
       height: 100%;
@@ -1065,7 +1066,8 @@ footer {
       backface-visibility: hidden;
       transition: transform 0.5s ease-in-out;
       transform: rotateY(0deg);
-      gap: 10px; }
+      gap: 10px;
+      box-shadow: 3px 3px 8px; }
       .ventas .card-sale .front .front-img {
         display: flex;
         justify-content: center;
@@ -1079,6 +1081,8 @@ footer {
         position: relative;
         bottom: 17px;
         font-size: 30px; }
+      .ventas .card-sale .front:hover {
+        box-shadow: 5px 5px 13px; }
     .ventas .card-sale .back {
       position: absolute;
       height: 100%;
@@ -1091,7 +1095,10 @@ footer {
       background-color: #245953;
       backface-visibility: hidden;
       transition: transform 0.5s ease-in-out;
-      transform: rotateY(180deg); }
+      transform: rotateY(180deg);
+      box-shadow: 3px 3px 8px; }
+      .ventas .card-sale .back:hover {
+        box-shadow: 5px 5px 13px; }
       .ventas .card-sale .back .back-img {
         display: flex;
         justify-content: center;
@@ -1150,10 +1157,12 @@ footer {
     background-color: #ffffff;
     border-radius: 50%;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    position: absolute;
-    top: 1.5%;
-    right: 72%;
-    z-index: 11;
+    position: fixed;
+    width: 3.6rem;
+    height: 3.6rem;
+    top: 10%;
+    right: 4.7%;
+    z-index: 28;
     cursor: pointer; }
     .cartBtn img {
       height: 68%;
@@ -1167,7 +1176,7 @@ footer {
     background-color: #6b6565f3;
     padding: 50px 20px;
     transition: transform 0.6s ease;
-    z-index: 12; }
+    z-index: 27; }
     .cartOffCanvas .title-cart {
       position: absolute;
       left: 5rem;
@@ -1189,12 +1198,12 @@ footer {
       left: 2rem;
       top: 16rem; }
     .cartOffCanvas button {
-      height: 5rem;
-      width: 5rem;
+      height: 5.7rem;
+      width: 10rem;
       position: absolute;
       font-size: 24px;
-      top: 27rem;
-      left: 1rem; }
+      top: 29rem;
+      left: 3.7rem; }
     .cartOffCanvas.show {
       transform: translateX(-110%); }
     .cartOffCanvas .closeCartBtn {
