@@ -1,4 +1,4 @@
-// Funcionamiento de Carrito de Compras
+// Carrito de compras
 
 const btnAggCartList = document.querySelectorAll(".btnAggCart");
 const displayData = document.querySelector("#displayData");
@@ -10,6 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let savedPhones = Object.keys(localStorage).filter(key => key.startsWith('phone-')).map(key => JSON.parse(localStorage.getItem(key)));
   for (let i = 0; i < savedPhones.length; i++) {
     const { id, model, price } = savedPhones[i];
+    // Datos del carrito
     const phoneItem = document.createElement("div");
     phoneItem.innerHTML = `
       <span>Modelo: ${model}</span>
@@ -27,6 +28,14 @@ function searchPhones(id) {
   const phone = Phones.find((phone) => phone.id === id);
   if (phone) {
     const { id, model, price } = phone;
+
+    // Verificar si ya hay 3 productos en el carrito
+    const itemsInCart = displayData.querySelectorAll("div").length;
+    if (itemsInCart >= 3) {
+      alert("Solo se pueden agregar 3 productos. Si necesitas agregar otro, elimina alguno o haz otra compra después.");
+      return;
+    }
+
     const phoneItem = document.createElement("div");
     phoneItem.innerHTML = `
       <span>Modelo: ${model}</span>
@@ -53,6 +62,7 @@ btnAggCartList.forEach((btnAggCart) => {
   });
 });
 
+// Eliminar producto
 displayData.addEventListener("click", (event) => {
   if (event.target.classList.contains("removeBtn")) {
     const confirmRemove = confirm("¿Seguro que quiere eliminar este teléfono del Carrito?");
