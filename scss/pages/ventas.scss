@@ -2,14 +2,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 4.3rem;
-    height: 4.3rem;
+    width: 4.7rem;
+    height: 4.7rem;
     background-color: #d8d8d8;
     border-radius: 50%;
     box-shadow: 3px 2px 5px #000000;
-    position: absolute;
-    top: 1.5%;
-    right: 72%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
     z-index: 28;
     cursor: pointer;
 
@@ -83,6 +83,7 @@
     }
 
     .btnBuy {
+        width: 23rem;
         position: absolute;
         font-size: 29px;
         top: 31.6rem;
@@ -243,247 +244,160 @@
 }
 
 @media (max-width: 1900px) {
+    .cartOffCanvas {
+        .title-cart {
+            left: 30rem;
+            font-size: 60px;
+        }
+
+        .txt-prod {
+            top: 9rem;
+            left: 2rem;
+
+            #displayData {
+                font-size: 30px;
+
+                .removeBtn {
+                    top: 5rem;
+                    right: 5rem;
+                    font-size: 22px;
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+        }
+
+        .txt-price {
+            left: 1.4rem;
+            top: 26rem;
+            font-size: 33px;
+        }
+
+        .btnBuy {
+            font-size: 30px;
+            top: 29rem;
+            left: 26.8rem;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .cartOffCanvas {
+        .title-cart {
+            left: 20rem;
+            font-size: 48px;
+        }
+
+        .txt-prod {
+            #displayData {
+                font-size: 26px;
+            }
+        }
+
+        .txt-price {
+            left: 1.4rem;
+            top: 26rem;
+            font-size: 26px;
+        }
+
+        .btnBuy {
+            width: 18.5rem;
+            font-size: 24px;
+            top: 31rem;
+            left: 18rem;
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .cartOffCanvas {
+        .title-cart {
+            left: 17rem;
+            font-size: 43px;
+        }
+
+        .txt-prod {
+            #displayData {
+                font-size: 20px;
+            }
+        }
+
+        .txt-price {
+            left: 1.4rem;
+            top: 20rem;
+            font-size: 26px;
+        }
+
+        .btnBuy {
+            width: 12em;
+            font-size: 20px;
+            top: 31rem;
+            left: 9rem;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    .cartOffCanvas {
+        .title-cart {
+            left: 4rem;
+            font-size: 40px;
+        }
+
+        .txt-prod {
+            top: 9rem;
+            left: 2rem;
+
+            #displayData {
+                flex-direction: column;
+                font-size: 20px;
+
+                .removeBtn {
+                    top: 1rem;
+                    left: 11.48rem;
+                    font-size: 19.5px;
+                    height: 1.8rem;
+                    width: 1.8rem;
+                }
+            }
+        }
+
+        .txt-price {
+            left: 1.4rem;
+            top: 26rem;
+            font-size: 28px;
+        }
+
+        .btnBuy {
+            height: 4rem;
+            width: 10rem;
+            font-size: 20px;
+            top: 30rem;
+            left: 3.7rem;
+        }
+    }
+}
+
+@media (max-width: 600px) {
     .cartBtn {
         width: 4rem;
         height: 4rem;
-        top: 1rem;
-        right: 80rem;
-    }
-
-    .cartOffCanvas {
-        .title-cart {
-            left: 30rem;
-            font-size: 60px;
-        }
-
-        .txt-prod {
-            top: 9rem;
-            left: 2rem;
-
-            #displayData {
-                font-size: 30px;
-
-                .removeBtn {
-                    top: 5rem;
-                    right: 5rem;
-                    font-size: 22px;
-                    height: 2rem;
-                    width: 2rem;
-                }
-            }
-        }
-
-        .txt-price {
-            left: 1.4rem;
-            top: 26rem;
-            font-size: 33px;
-        }
-
-        .btnBuy {
-            height: 5rem;
-            width: 16rem;
-            font-size: 30px;
-            top: 29rem;
-            left: 26.8rem;
-        }
     }
 }
 
-@media (max-width: 1790px) {
+
+
+@media (max-width: 490px) {
     .cartBtn {
-        width: 4rem;
-        height: 4rem;
-        top: 1rem;
-        right: 75rem;
-    }
-
-    .cartOffCanvas {
-        .title-cart {
-            left: 30rem;
-            font-size: 60px;
-        }
-
-        .txt-prod {
-            top: 9rem;
-            left: 2rem;
-
-            #displayData {
-                font-size: 30px;
-
-                .removeBtn {
-                    top: 5rem;
-                    right: 5rem;
-                    font-size: 22px;
-                    height: 2rem;
-                    width: 2rem;
-                }
-            }
-        }
-
-        .txt-price {
-            left: 1.4rem;
-            top: 26rem;
-            font-size: 33px;
-        }
-
-        .btnBuy {
-            height: 5rem;
-            width: 16rem;
-            font-size: 30px;
-            top: 29rem;
-            left: 26.8rem;
-        }
+        width: 3.5rem;
+        height: 3.5rem;
     }
 }
 
-@media (max-width: 1710px) {
+@media (max-width: 395px) {
     .cartBtn {
-        width: 4rem;
-        height: 4rem;
-        top: 1rem;
-        right: 70rem;
-    }
-
-    .cartOffCanvas {
-        .title-cart {
-            left: 30rem;
-            font-size: 60px;
-        }
-
-        .txt-prod {
-            top: 9rem;
-            left: 2rem;
-
-            #displayData {
-                font-size: 30px;
-
-                .removeBtn {
-                    top: 5rem;
-                    right: 5rem;
-                    font-size: 22px;
-                    height: 2rem;
-                    width: 2rem;
-                }
-            }
-        }
-
-        .txt-price {
-            left: 1.4rem;
-            top: 26rem;
-            font-size: 33px;
-        }
-
-        .btnBuy {
-            height: 5rem;
-            width: 16rem;
-            font-size: 30px;
-            top: 29rem;
-            left: 26.8rem;
-        }
-    }
-}
-
-@media (max-width: 1710px) {
-    .cartBtn {
-        width: 3.7rem;
-        height: 3.7rem;
-        top: 1.2rem;
-        right: 65rem;
-    }
-
-    .cartOffCanvas {
-        .title-cart {
-            left: 30rem;
-            font-size: 60px;
-        }
-
-        .txt-prod {
-            top: 9rem;
-            left: 2rem;
-
-            #displayData {
-                font-size: 30px;
-
-                .removeBtn {
-                    top: 5rem;
-                    right: 5rem;
-                    font-size: 22px;
-                    height: 2rem;
-                    width: 2rem;
-                }
-            }
-        }
-
-        .txt-price {
-            left: 1.4rem;
-            top: 26rem;
-            font-size: 33px;
-        }
-
-        .btnBuy {
-            height: 5rem;
-            width: 16rem;
-            font-size: 30px;
-            top: 29rem;
-            left: 26.8rem;
-        }
-    }
-}
-
-@media (max-width: 1545px) {
-    .cartBtn {
-        width: 3.4rem;
-        height: 3.4rem;
-        top: 1.3rem;
-        right: 51rem;
-    }
-
-    .cartOffCanvas {
-        .title-cart {
-            left: 30rem;
-            font-size: 60px;
-        }
-
-        .txt-prod {
-            top: 9rem;
-            left: 2rem;
-
-            #displayData {
-                font-size: 30px;
-
-                .removeBtn {
-                    top: 5rem;
-                    right: 5rem;
-                    font-size: 22px;
-                    height: 2rem;
-                    width: 2rem;
-                }
-            }
-        }
-
-        .txt-price {
-            left: 1.4rem;
-            top: 26rem;
-            font-size: 33px;
-        }
-
-        .btnBuy {
-            height: 5rem;
-            width: 16rem;
-            font-size: 30px;
-            top: 29rem;
-            left: 26.8rem;
-        }
-    }
-}
-
-@media (max-width: 420px) {
-    .cartBtn {
-        position: fixed;
-        width: 3.6rem;
-        height: 3.6rem;
-        top: 5.5rem;
-        right: 1.1rem;
+        width: 3rem;
+        height: 3rem;
     }
 
     .cartOffCanvas {
@@ -523,5 +437,53 @@
             top: 30rem;
             left: 3.7rem;
         }
+    }
+}
+
+@media (max-width: 375px) {
+    .cartOffCanvas {
+        .title-cart {
+            left: 4rem;
+            font-size: 40px;
+        }
+
+        .txt-prod {
+            top: 9rem;
+            left: 2rem;
+
+            #displayData {
+                flex-direction: column;
+                font-size: 20px;
+
+                .removeBtn {
+                    top: 1rem;
+                    left: 10rem;
+                    font-size: 19.5px;
+                    height: 1.8rem;
+                    width: 1.8rem;
+                }
+            }
+        }
+
+        .txt-price {
+            left: 1.4rem;
+            top: 26rem;
+            font-size: 28px;
+        }
+
+        .btnBuy {
+            height: 3rem;
+            width: 7rem;
+            font-size: 14px;
+            top: 30rem;
+            left: 3.7rem;
+        }
+    }
+}
+
+@media (max-width: 360px) {
+    .cartBtn {
+        width: 2.6rem;
+        height: 2.6rem;
     }
 }
