@@ -5,13 +5,14 @@ const displayData = document.querySelector("#displayData");
 const totalDisplay = document.querySelector("#totalPrice");
 let total = 0;
 
-// Recuperar los artículos guardados en el almacenamiento local
+// Recuperar los artículos guardados en el LocalStorage
 document.addEventListener("DOMContentLoaded", () => {
   let savedPhones = Object.keys(localStorage).filter(key => key.startsWith('phone-')).map(key => JSON.parse(localStorage.getItem(key)));
   for (let i = 0; i < savedPhones.length; i++) {
     const { id, model, price } = savedPhones[i];
     // Datos del carrito
     const phoneItem = document.createElement("div");
+    // Esto se muestra en el carrito
     phoneItem.innerHTML = `
       <span>Modelo: ${model}</span>
       <br>
@@ -48,7 +49,7 @@ function searchPhones(id) {
       displayData.appendChild(phoneItem);
       total += price;
       totalDisplay.innerHTML = `Total: $${total.toFixed(2)}`;
-      // Guardar el artículo en el almacenamiento local
+      // Guardar el artículo en el LocalStorage
       const phoneInfo = {id, model, price};
       localStorage.setItem('phone-' + id, JSON.stringify(phoneInfo));
     }

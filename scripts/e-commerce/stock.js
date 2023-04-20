@@ -1,3 +1,5 @@
+// Array del stock (Proximamente esto pasara a una base de datos)
+
 const Phones = [
     {
         id: 1,

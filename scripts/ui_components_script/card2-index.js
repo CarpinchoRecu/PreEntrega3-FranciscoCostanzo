@@ -1,3 +1,5 @@
+// Hacer que cada vez que vea la img se active la animacion
+
 const card2 = document.querySelectorAll('.card2');
 
 const observer = new IntersectionObserver(entries => {

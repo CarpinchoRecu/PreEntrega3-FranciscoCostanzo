@@ -48,18 +48,10 @@ nav {
         }
 
         img {
-            width: 4rem;
-            height: 5rem;
-            margin-left: 2rem;
+            width: 5rem;
+            height: 6rem;
+            margin: 0.8rem 3rem;
             object-fit: contain;
-            transition: transform 0.3s ease-in-out;
-            transform: scale(1);
-            transition: border 0.1s ease-in;
-        }
-
-        img:hover {
-            transform: scale(0.9);
-            transition: 0.5s ease;
         }
     }
 
@@ -257,8 +249,8 @@ nav {
         border-radius: 50%;
         box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
         position: fixed;
-        top: 20px;
-        right: 20px;
+        top: 1.5%;
+        right: 1rem;
         z-index: 30;
         cursor: pointer;
     }
@@ -316,8 +308,7 @@ nav {
             margin-bottom: 20px;
             color: #ffffff;
             text-decoration: none;
-            height: auto;
-            width: 35%;
+            width: 64%;
 
             /*Animacion de Botones*/
             &:hover {
@@ -399,10 +390,15 @@ nav {
             h2 {
                 font-size: 33px;
             }
+
+            img{
+                margin: 0.7rem 1rem;
+            }
         }
     }
 
     .menu-btn {
+        top: 2%;
         width: 4rem;
         height: 4rem;
     }
@@ -487,6 +483,7 @@ nav {
     }
 
     .menu-btn {
+        top: 2.5%;
         width: 3.5rem;
         height: 3.5rem;
     }
@@ -621,6 +618,7 @@ nav {
     }
 
     .menu-btn {
+        top: 3%;
         width: 2.6rem;
         height: 2.6rem;
     }

@@ -1,4 +1,4 @@
-// Funciones para los botones de la barra
+// Retrasar logo (para ver la animacion en mobile)
 
 document.getElementById("logo").addEventListener("click", function (event) {
   event.preventDefault();
@@ -10,7 +10,8 @@ document.getElementById("logo").addEventListener("click", function (event) {
   }, 500);
 });
 
-// obtenemos todos los elementos "a" en la página
+// Retrasar los elementos <a> (Para ver la animacion en mobile)
+
 const links = document.getElementsByTagName("a");
 
 for (let i = 0; i < links.length; i++) {
@@ -50,8 +51,8 @@ closeBtn.addEventListener("click", () => {
   menuSpan.classList.toggle("hide");
 });
 
-// pasar de nota
 
+// Animacion de las notas
 let currentText = 1;
 
 function noteAnimate() {

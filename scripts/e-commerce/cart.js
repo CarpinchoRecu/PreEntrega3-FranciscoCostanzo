@@ -1,3 +1,5 @@
+// Funcionamiento del boton del carrito
+
 const cartBtn = document.querySelector(".cartBtn");
 const closeCartBtn = document.querySelector(".closeCartBtn");
 const cartOffCanvas = document.querySelector(".cartOffCanvas");

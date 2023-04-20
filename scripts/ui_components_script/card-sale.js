@@ -1,3 +1,5 @@
+// Hacer que se reproduzca la animacion cuando doy click
+
 const cardsSale = document.querySelectorAll(".card-sale");
 
 cardsSale.forEach((cardsSale) => {
