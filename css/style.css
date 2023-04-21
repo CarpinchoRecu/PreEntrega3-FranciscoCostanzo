@@ -982,7 +982,7 @@ footer {
         box-shadow: #272626 2px 1px 6px;
         border-radius: 50%;
         position: absolute;
-        top: 5rem;
+        top: 5.2rem;
         right: 5rem;
         font-size: 23px;
         font-weight: bold;
@@ -995,7 +995,8 @@ footer {
     position: absolute;
     font-size: 35px;
     left: 10rem;
-    top: 25rem; }
+    top: 25rem;
+    border-bottom: #000000 solid; }
   .cartOffCanvas .btnBuy {
     width: 23rem;
     position: absolute;
@@ -1346,6 +1347,18 @@ body.dark-mode nav .title-logo h2 {
 body.dark-mode nav .buttons a {
   color: #fff; }
 
+body.dark-mode .cartOffCanvas {
+  background-color: #0c1615cb; }
+  body.dark-mode .cartOffCanvas .title-cart {
+    color: #fff;
+    border-bottom: #fff solid; }
+  body.dark-mode .cartOffCanvas .txt-prod {
+    color: #fff;
+    border-bottom: #fff solid; }
+  body.dark-mode .cartOffCanvas .txt-price {
+    color: #fff;
+    border-bottom: #fff solid; }
+
 body.dark-mode .grid-main {
   background-color: #3f3838; }
 
@@ -1356,3 +1369,10 @@ body.dark-mode .card .container .box .box-txt h2 {
 body.dark-mode .card .container .box2 {
   background-color: #0c1615;
   color: #fff; }
+
+body.dark-mode .ventas .card-sale {
+  background-color: #000; }
+  body.dark-mode .ventas .card-sale .front {
+    background-color: #1b1d1d; }
+  body.dark-mode .ventas .card-sale .back {
+    background-color: #1b1d1d; }

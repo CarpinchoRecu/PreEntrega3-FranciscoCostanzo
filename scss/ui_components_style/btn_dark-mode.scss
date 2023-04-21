@@ -91,6 +91,7 @@
 }
 
 body.dark-mode {
+
     header {
         background-color: #0c1615;
     }
@@ -109,26 +110,56 @@ body.dark-mode {
         }
     }
 
+    .cartOffCanvas {
+        background-color: #0c1615cb;
 
-        .grid-main{
-            background-color: #3f3838;
+        .title-cart {
+            color: #fff;
+            border-bottom: #fff solid;
         }
-    
+
+        .txt-prod {
+            color: #fff;
+            border-bottom: #fff solid;
+        }
+
+        .txt-price {
+            color: #fff;
+            border-bottom: #fff solid;
+        }
+    }
+
+    .grid-main {
+        background-color: #3f3838;
+    }
+
 
     .card {
         .container {
             .box {
-                .box-txt{
-                    h2{
+                .box-txt {
+                    h2 {
                         color: #fff;
                         border-bottom: #fff solid 2.5px;
                     }
                 }
             }
 
-            .box2{
+            .box2 {
                 background-color: #0c1615;
                 color: #fff;
+            }
+        }
+    }
+
+    .ventas{
+        .card-sale{
+            background-color: #000;
+            .front{
+                background-color: #1b1d1d;
+            }
+            .back{
+                background-color: #1b1d1d;
             }
         }
     }
