@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,29 @@ body {
   background-color: black;
   animation: animation-pages 1.5s ease;
   opacity: 1; }
+
+/* Estilo para la barra de scroll vertical */
+::-webkit-scrollbar {
+  width: 10px; }
+
+::-webkit-scrollbar-track {
+  background: #ffffff;
+  /* Color del fondo de la barra */ }
+
+::-webkit-scrollbar-thumb {
+  background: #504f4f;
+  border-radius: 3px;
+  border: solid 1px;
+  /* Color del thumb (barra móvil) */ }
+
+/* Estilo para la barra de scroll horizontal */
+::-webkit-scrollbar-horizontal {
+  height: 10px;
+  /* Altura de la barra */ }
+
+::-webkit-scrollbar-thumb:horizontal {
+  background: #504f4f;
+  /* Color del thumb (barra móvil) horizontal */ }
 
 /*color de nav*/
 header {
@@ -1055,7 +1079,7 @@ footer {
       backface-visibility: hidden;
       transition: transform 0.5s ease-in-out;
       transform: rotateY(0deg);
-      gap: 10px;
+      gap: 2px;
       box-shadow: 3px 3px 8px; }
       .ventas .card-sale .front .front-img {
         display: flex;
@@ -1096,13 +1120,16 @@ footer {
           height: 70%; }
       .ventas .card-sale .back .txt1-sale-back {
         position: relative;
-        bottom: 49px;
-        font-size: 23px; }
+        bottom: 50px;
+        font-size: 25px; }
       .ventas .card-sale .back .txt2-sale-back {
         position: relative;
-        bottom: 30px;
-        font-size: 20px; }
+        bottom: 40px;
+        font-size: 22px;
+        font-weight: bold; }
       .ventas .card-sale .back .btnAggCart {
+        position: relative;
+        bottom: 24px;
         background-color: #d8d8d8;
         border: #d8d8d8;
         font-weight: bold;

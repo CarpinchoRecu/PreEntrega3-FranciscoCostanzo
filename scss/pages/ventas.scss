@@ -153,7 +153,7 @@
             backface-visibility: hidden;
             transition: transform 0.5s ease-in-out;
             transform: rotateY(0deg);
-            gap: 10px;
+            gap: 2px;
             box-shadow: 3px 3px 8px;
 
             .front-img {
@@ -209,17 +209,20 @@
 
             .txt1-sale-back {
                 position: relative;
-                bottom: 49px;
-                font-size: 23px;
+                bottom: 50px;
+                font-size: 25px;
             }
 
             .txt2-sale-back {
                 position: relative;
-                bottom: 30px;
-                font-size: 20px;
+                bottom: 40px;
+                font-size: 22px;
+                font-weight: bold;
             }
 
             .btnAggCart {
+                position: relative;
+                bottom: 24px;
                 background-color: #d8d8d8;
                 border: #d8d8d8;
                 font-weight: bold;
@@ -385,8 +388,6 @@
         height: 4rem;
     }
 }
-
-
 
 @media (max-width: 490px) {
     .cartBtn {

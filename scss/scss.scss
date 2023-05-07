@@ -23,6 +23,35 @@ body {
     opacity: 1;
 }
 
+/* Estilo para la barra de scroll vertical */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #ffffff;
+    /* Color del fondo de la barra */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #504f4f;
+    border-radius: 3px;
+    border: solid 1px;
+    /* Color del thumb (barra móvil) */
+}
+
+/* Estilo para la barra de scroll horizontal */
+::-webkit-scrollbar-horizontal {
+    height: 10px;
+    /* Altura de la barra */
+}
+
+::-webkit-scrollbar-thumb:horizontal {
+    background: #504f4f;
+    /* Color del thumb (barra móvil) horizontal */
+}
+
+
 @import "../scss/ui_components_style/nav.scss";
 @import "../scss/structure/grid.scss";
 @import "../scss/ui_components_style/footer.scss";
