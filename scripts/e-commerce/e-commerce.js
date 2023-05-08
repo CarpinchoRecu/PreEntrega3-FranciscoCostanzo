@@ -7,7 +7,9 @@ let total = 0;
 
 // Recuperar los artículos guardados en el LocalStorage
 document.addEventListener("DOMContentLoaded", () => {
-  let savedPhones = Object.keys(localStorage).filter(key => key.startsWith('phone-')).map(key => JSON.parse(localStorage.getItem(key)));
+  let savedPhones = Object.keys(localStorage)
+    .filter((key) => key.startsWith("phone-"))
+    .map((key) => JSON.parse(localStorage.getItem(key)));
   for (let i = 0; i < savedPhones.length; i++) {
     const { id, model, price } = savedPhones[i];
     // Datos del carrito
@@ -33,7 +35,12 @@ function searchPhones(id) {
     // Verificar si ya hay 3 productos en el carrito
     const itemsInCart = displayData.querySelectorAll("div").length;
     if (itemsInCart >= 3) {
-      alert("Solo se pueden agregar 3 productos. Si necesitas agregar otro, elimina alguno o haz otra compra después.");
+      swal({
+        title: "¡Lo siento!",
+        text: "Solo se pueden agregar 3 productos. Si necesitas agregar otro, elimina alguno o haz otra compra después.",
+        icon: "warning",
+        button: "Aceptar",
+      });
       return;
     }
 
@@ -44,15 +51,22 @@ function searchPhones(id) {
       <span>Precio: $${price.toFixed(2)}</span>
       <button class="removeBtn" data-phone-id="${id}">X</button>
     `;
-    const confirmAdd = confirm("¿Seguro que quiere agregar al Carrito?");
-    if (confirmAdd) {
-      displayData.appendChild(phoneItem);
-      total += price;
-      totalDisplay.innerHTML = `Total: $${total.toFixed(2)}`;
-      // Guardar el artículo en el LocalStorage
-      const phoneInfo = {id, model, price};
-      localStorage.setItem('phone-' + id, JSON.stringify(phoneInfo));
-    }
+
+    swal({
+      title: "Agregar al Carrito",
+      text: `¿Seguro que desea agregar el Iphone ${model} al carrito?`,
+      icon: "info",
+      buttons: ["Cancelar", "Agregar"],
+    }).then((willAdd) => {
+      if (willAdd) {
+        displayData.appendChild(phoneItem);
+        total += price;
+        totalDisplay.innerHTML = `Total: $${total.toFixed(2)}`;
+        // Guardar el artículo en el LocalStorage
+        const phoneInfo = { id, model, price };
+        localStorage.setItem("phone-" + id, JSON.stringify(phoneInfo));
+      }
+    });
   }
 }
 
@@ -66,16 +80,25 @@ btnAggCartList.forEach((btnAggCart) => {
 // Eliminar producto
 displayData.addEventListener("click", (event) => {
   if (event.target.classList.contains("removeBtn")) {
-    const confirmRemove = confirm("¿Seguro que quiere eliminar este teléfono del Carrito?");
-    if (confirmRemove) {
-      const phoneId = event.target.dataset.phoneId;
-      const phoneItem = event.target.parentNode;
-      const phonePrice = Phones.find((phone) => phone.id === parseInt(phoneId)).price;
-      total -= phonePrice;
-      totalDisplay.innerHTML = `Total: $${total.toFixed(2)}`;
-      phoneItem.parentNode.removeChild(phoneItem);
-      // Eliminar el artículo del almacenamiento local
-      localStorage.removeItem('phone-' + phoneId);
-    }
+    const phoneId = event.target.dataset.phoneId;
+    const phonePrice = Phones.find(
+      (phone) => phone.id === parseInt(phoneId)
+    ).price;
+
+    swal({
+      title: "Eliminar del Carrito",
+      text: `¿Seguro que desea eliminar este teléfono del Carrito?`,
+      icon: "warning",
+      buttons: ["Cancelar", "Eliminar"],
+    }).then((willRemove) => {
+      if (willRemove) {
+        const phoneItem = event.target.parentNode;
+        total -= phonePrice;
+        totalDisplay.innerHTML = `Total: $${total.toFixed(2)}`;
+        phoneItem.parentNode.removeChild(phoneItem);
+        // Eliminar el artículo del almacenamiento local
+        localStorage.removeItem("phone-" + phoneId);
+      }
+    });
   }
 });

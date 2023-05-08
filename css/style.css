@@ -914,44 +914,6 @@ footer {
     .card2 .container:hover .box {
       transform: translate(-0.6rem, -0.6rem); } }
 
-.sobre-nosotros section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 18px; }
-  .sobre-nosotros section div {
-    display: flex;
-    align-items: center;
-    flex-direction: column; }
-    .sobre-nosotros section div h2 {
-      font-size: 50px;
-      border-bottom: #ffffff solid; }
-  .sobre-nosotros section div p {
-    font-weight: bold;
-    font-size: 30px; }
-
-@media (max-width: 400px) {
-  .sobre-nosotros section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 18px; }
-    .sobre-nosotros section div {
-      display: flex;
-      align-items: center;
-      flex-direction: column; }
-      .sobre-nosotros section div h2 {
-        font-size: 50px; }
-      .sobre-nosotros section div div {
-        width: 100%;
-        border-radius: 9px;
-        height: 4px;
-        background-color: #ffffff; }
-    .sobre-nosotros section div p {
-      font-size: 30px; } }
-
 .cartBtn {
   display: flex;
   justify-content: center;
