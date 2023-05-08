@@ -315,6 +315,98 @@ nav {
                 border-bottom: solid 2px #d8d8d8;
             }
         }
+
+        .div-btn-dark_mode-burger {
+            position: relative;
+            z-index: 2;
+            top: 30rem;
+            right: 10rem;
+            scale: 0.22;
+        
+            .label-btn-dark-mode {
+                width: 500px;
+                height: 200px;
+                position: relative;
+                display: block;
+                background: #ebebeb;
+                border-radius: 200px;
+                box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4),
+                    inset 0px -5px 15px rgba(255, 255, 255, 0.4);
+                cursor: pointer;
+            }
+        
+            .label-btn-dark-mode:after {
+                content: "";
+                width: 180px;
+                height: 180px;
+                position: absolute;
+                top: 10px;
+                left: 10px;
+                background: linear-gradient(180deg, #ffcc89, #d8860b);
+                border-radius: 180px;
+                box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            }
+        
+            .label-btn-dark-mode,
+            .label-btn-dark-mode:after {
+                transition: 0.3s;
+            }
+        
+            .label-btn-dark-mode:active:after {
+                width: 260px;
+            }
+        
+            .input-btn-dark-mode {
+                width: 0;
+                height: 0;
+                visibility: hidden;
+            }
+        
+            .input-btn-dark-mode:checked+.label-btn-dark-mode {
+                background: #242424;
+            }
+        
+            .input-btn-dark-mode:checked+.label-btn-dark-mode:after {
+                left: 490px;
+                transform: translateX(-100%);
+                background: linear-gradient(180deg, #777, #3a3a3a);
+            }
+        
+            .input-btn-dark-mode:checked+.label-btn-dark-mode+.sun {
+                fill: #7e7e7e;
+            }
+        
+            .input-btn-dark-mode:checked+.label-btn-dark-mode+.moon {
+                fill: #7e7e7e;
+            }
+        
+            .sun-moon {
+                position: absolute;
+                width: 120px;
+                top: 40px;
+                z-index: 1;
+            }
+        
+            .sun {
+                position: absolute;
+                height: 9.5rem;
+                width: 9.5rem;
+                left: 17%;
+                bottom: -135px;
+                fill: #fff;
+                transition: 0.3s;
+            }
+        
+            .moon {
+                position: absolute;
+                height: 9rem;
+                width: 9rem;
+                left: 273%;
+                bottom: -130px;
+                fill: #7e7e7e;
+                transition: 0.3s;
+            }
+        }
     }
 
     .offcanvas.show {
@@ -421,6 +513,11 @@ nav {
     .offcanvas {
         a {
             font-size: 22px;
+        }
+
+        .div-btn-dark_mode-burger {
+            right: 7rem;
+            scale: 0.21;
         }
     }
 
@@ -595,6 +692,13 @@ nav {
     .menu-btn {
         width: 3rem;
         height: 3rem;
+    }
+
+    .offcanvas {
+        .div-btn-dark_mode-burger {
+            right: 5rem;
+            scale: 0.19;
+        }
     }
 }
 

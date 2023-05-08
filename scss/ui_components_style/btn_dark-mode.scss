@@ -152,15 +152,23 @@ body.dark-mode {
         }
     }
 
-    .ventas{
-        .card-sale{
+    .ventas {
+        .card-sale {
             background-color: #000;
-            .front{
+
+            .front {
                 background-color: #1b1d1d;
             }
-            .back{
+
+            .back {
                 background-color: #1b1d1d;
             }
         }
+    }
+}
+
+@media (max-width: 800px) {
+    .btn-dark_mode-responsive {
+        display: none;
     }
 }
