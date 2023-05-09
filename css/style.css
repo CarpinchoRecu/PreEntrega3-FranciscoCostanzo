@@ -237,10 +237,10 @@ nav {
     .offcanvas .div-btn-dark_mode-burger {
       position: relative;
       z-index: 2;
-      top: 30rem;
+      top: 2rem;
       right: 10rem;
       scale: 0.22; }
-      .offcanvas .div-btn-dark_mode-burger .label-btn-dark-mode {
+      .offcanvas .div-btn-dark_mode-burger .label-btn-dark-mode-burger {
         width: 500px;
         height: 200px;
         position: relative;
@@ -249,7 +249,7 @@ nav {
         border-radius: 200px;
         box-shadow: inset 0px 5px 15px rgba(0, 0, 0, 0.4), inset 0px -5px 15px rgba(255, 255, 255, 0.4);
         cursor: pointer; }
-      .offcanvas .div-btn-dark_mode-burger .label-btn-dark-mode:after {
+      .offcanvas .div-btn-dark_mode-burger .label-btn-dark-mode-burger:after {
         content: "";
         width: 180px;
         height: 180px;
@@ -259,31 +259,31 @@ nav {
         background: linear-gradient(180deg, #ffcc89, #d8860b);
         border-radius: 180px;
         box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); }
-      .offcanvas .div-btn-dark_mode-burger .label-btn-dark-mode,
-      .offcanvas .div-btn-dark_mode-burger .label-btn-dark-mode:after {
+      .offcanvas .div-btn-dark_mode-burger .label-btn-dark-mode-burger,
+      .offcanvas .div-btn-dark_mode-burger .label-btn-dark-mode-burger:after {
         transition: 0.3s; }
-      .offcanvas .div-btn-dark_mode-burger .label-btn-dark-mode:active:after {
+      .offcanvas .div-btn-dark_mode-burger .label-btn-dark-mode-burger:active:after {
         width: 260px; }
-      .offcanvas .div-btn-dark_mode-burger .input-btn-dark-mode {
+      .offcanvas .div-btn-dark_mode-burger .input-btn-dark-mode-burger {
         width: 0;
         height: 0;
         visibility: hidden; }
-      .offcanvas .div-btn-dark_mode-burger .input-btn-dark-mode:checked + .label-btn-dark-mode {
+      .offcanvas .div-btn-dark_mode-burger .input-btn-dark-mode-burger:checked + .label-btn-dark-mode-burger {
         background: #242424; }
-      .offcanvas .div-btn-dark_mode-burger .input-btn-dark-mode:checked + .label-btn-dark-mode:after {
+      .offcanvas .div-btn-dark_mode-burger .input-btn-dark-mode-burger:checked + .label-btn-dark-mode-burger:after {
         left: 490px;
         transform: translateX(-100%);
         background: linear-gradient(180deg, #777, #3a3a3a); }
-      .offcanvas .div-btn-dark_mode-burger .input-btn-dark-mode:checked + .label-btn-dark-mode + .sun {
+      .offcanvas .div-btn-dark_mode-burger .input-btn-dark-mode-burger:checked + .label-btn-dark-mode-burger + .sun-burger {
         fill: #7e7e7e; }
-      .offcanvas .div-btn-dark_mode-burger .input-btn-dark-mode:checked + .label-btn-dark-mode + .moon {
+      .offcanvas .div-btn-dark_mode-burger .input-btn-dark-mode-burger:checked + .label-btn-dark-mode-burger + .moon-burger {
         fill: #7e7e7e; }
-      .offcanvas .div-btn-dark_mode-burger .sun-moon {
+      .offcanvas .div-btn-dark_mode-burger .sun-moon-burger {
         position: absolute;
         width: 120px;
         top: 40px;
         z-index: 1; }
-      .offcanvas .div-btn-dark_mode-burger .sun {
+      .offcanvas .div-btn-dark_mode-burger .sun-burger {
         position: absolute;
         height: 9.5rem;
         width: 9.5rem;
@@ -291,7 +291,7 @@ nav {
         bottom: -135px;
         fill: #fff;
         transition: 0.3s; }
-      .offcanvas .div-btn-dark_mode-burger .moon {
+      .offcanvas .div-btn-dark_mode-burger .moon-burger {
         position: absolute;
         height: 9rem;
         width: 9rem;
