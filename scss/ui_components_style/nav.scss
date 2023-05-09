@@ -322,7 +322,7 @@ nav {
             top: 2rem;
             right: 10rem;
             scale: 0.22;
-        
+
             .label-btn-dark-mode-burger {
                 width: 500px;
                 height: 200px;
@@ -334,7 +334,7 @@ nav {
                     inset 0px -5px 15px rgba(255, 255, 255, 0.4);
                 cursor: pointer;
             }
-        
+
             .label-btn-dark-mode-burger:after {
                 content: "";
                 width: 180px;
@@ -346,47 +346,47 @@ nav {
                 border-radius: 180px;
                 box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
             }
-        
+
             .label-btn-dark-mode-burger,
             .label-btn-dark-mode-burger:after {
                 transition: 0.3s;
             }
-        
+
             .label-btn-dark-mode-burger:active:after {
                 width: 260px;
             }
-        
+
             .input-btn-dark-mode-burger {
                 width: 0;
                 height: 0;
                 visibility: hidden;
             }
-        
+
             .input-btn-dark-mode-burger:checked+.label-btn-dark-mode-burger {
                 background: #242424;
             }
-        
+
             .input-btn-dark-mode-burger:checked+.label-btn-dark-mode-burger:after {
                 left: 490px;
                 transform: translateX(-100%);
                 background: linear-gradient(180deg, #777, #3a3a3a);
             }
-        
+
             .input-btn-dark-mode-burger:checked+.label-btn-dark-mode-burger+.sun-burger {
                 fill: #7e7e7e;
             }
-        
+
             .input-btn-dark-mode-burger:checked+.label-btn-dark-mode-burger+.moon-burger {
                 fill: #7e7e7e;
             }
-        
+
             .sun-moon-burger {
                 position: absolute;
                 width: 120px;
                 top: 40px;
                 z-index: 1;
             }
-        
+
             .sun-burger {
                 position: absolute;
                 height: 9.5rem;
@@ -396,8 +396,8 @@ nav {
                 fill: #fff;
                 transition: 0.3s;
             }
-        
-            .moon-burger{
+
+            .moon-burger {
                 position: absolute;
                 height: 9rem;
                 width: 9rem;

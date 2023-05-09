@@ -1,252 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Iphone-Store</title>
 
-    <!--Linkeo de CSS-->
-    <link rel="stylesheet" href="./css/style.css" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iphone-Store</title>
 
-    <!--Linkeo de Fuente-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+  <!--Linkeo de CSS-->
+  <link rel="stylesheet" href="./css/style.css" />
 
-  <body>
-    <header class="grid-header">
-      <nav>
-        <div class="title-logo">
-          <a id="logo" class="animate_logo" href="./index.html"
-            ><img src="./images/logo.jpeg" alt="logo"
-          /></a>
-          <h2>IPHONE - STORE</h2>
+  <!--Linkeo de Fuente-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header class="grid-header">
+    <nav>
+      <div class="title-logo">
+        <a id="logo" class="animate_logo" href="./index.html"><img src="./images/logo.jpeg" alt="logo" /></a>
+        <h2>IPHONE - STORE</h2>
+      </div>
+      <div class="buttons">
+        <div><a href="./index.html">Inicio</a></div>
+        <div><a href="./pages/contactanos.html">Contactanos</a></div>
+        <div><a href="./pages/ventas.html">Productos</a></div>
+      </div>
+    </nav>
+
+    <div id="menu-burger">
+      <div class="menu-btn">
+        <span></span>
+      </div>
+      <div class="offcanvas">
+        <div class="close-btn"></div>
+        <div><a href="./index.html">Inicio</a></div>
+        <div><a href="./pages/contactanos.html">Contactanos</a></div>
+        <div><a href="./pages/ventas.html">Productos</a></div>
+        <div class="menu-line"></div>
+        <div class="div-btn-dark_mode-burger">
+          <input class="input-btn-dark-mode-burger" type="checkbox" id="dark-mode-toggle" />
+          <label class="label-btn-dark-mode-burger" for="dark-mode-toggle">
+            <div class="sun-moon-burger">
+              <img class="sun-burger" src="./images/btn-dark-mode/sun.jpeg" alt="sun" />
+              <img class="moon-burger" src="./images/btn-dark-mode/moon.jpeg" alt="moon" />
+            </div>
+          </label>
         </div>
-        <div class="buttons">
-          <div><a href="./index.html">Inicio</a></div>
-          <div><a href="./pages/contactanos.html">Contactanos</a></div>
-          <div><a href="./pages/ventas.html">Productos</a></div>
-        </div>
-      </nav>
+      </div>
+    </div>
 
-      <div id="menu-burger">
-        <div class="menu-btn">
-          <span></span>
-        </div>
-        <div class="offcanvas">
-          <div class="close-btn"></div>
-          <div><a href="./index.html">Inicio</a></div>
-          <div><a href="./pages/contactanos.html">Contactanos</a></div>
-          <div><a href="./pages/ventas.html">Productos</a></div>
-          <div class="menu-line"></div>
-          <div class="div-btn-dark_mode-burger">
-            <input
-              class="input-btn-dark-mode-burger"
-              type="checkbox"
-              id="dark-mode-toggle"
-            />
-            <label class="label-btn-dark-mode-burger" for="dark-mode-toggle">
-              <div class="sun-moon-burger">
-                <img
-                  class="sun-burger"
-                  src="./images/btn-dark-mode/sun.jpeg"
-                  alt="sun"
-                />
-                <img
-                  class="moon-burger"
-                  src="./images/btn-dark-mode/moon.jpeg"
-                  alt="moon"
-                />
+    <div class="note">
+      <h2 class="note1">
+        IPHONES EN LAS MEJORES CONDICIONES Y CON MUY BUEN PRECIO
+      </h2>
+      <h2 class="note2">NO TE LOS PIERDAS!</h2>
+    </div>
+  </header>
+
+  <main id="grid-index" class="grid-main">
+    <section class="section-index1">
+      <div>
+        <div class="card">
+          <div class="container">
+            <div class="box">
+              <a href="./pages/ventas.html"><img src="./images/images-decoration/4.png" alt="img-sale" /></a>
+              <div class="box-txt">
+                <h2>Nuestros Productos</h2>
               </div>
-            </label>
+            </div>
+            <div class="box2">
+              <h2>Tenemos Productos en Stock y por ENCARGUE</h2>
+            </div>
           </div>
         </div>
       </div>
-
-      <div class="note">
-        <h2 class="note1">
-          IPHONES EN LAS MEJORES CONDICIONES Y CON MUY BUEN PRECIO
-        </h2>
-        <h2 class="note2">NO TE LOS PIERDAS!</h2>
-      </div>
-    </header>
-
-    <main id="grid-index" class="grid-main">
-      <section class="section-index1">
-        <div>
-          <div class="card">
-            <div class="container">
-              <div class="box">
-                <a href="./pages/ventas.html"
-                  ><img src="./images/images-decoration/4.png" alt="img-sale"
-                /></a>
-                <div class="box-txt">
-                  <h2>Nuestros Productos</h2>
-                </div>
-              </div>
-              <div class="box2">
-                <h2>Tenemos Productos en Stock y por ENCARGUE</h2>
+      <div>
+        <div class="card">
+          <div class="container">
+            <div class="box">
+              <a href="./pages/contactanos.html"><img src="./images/images-decoration/5.PNG" alt="img-sale" /></a>
+              <div class="box-txt">
+                <h2>Contactanos</h2>
               </div>
             </div>
-          </div>
-        </div>
-
-        <div>
-          <div class="card">
-            <div class="container">
-              <div class="box">
-                <a href="./pages/contactanos.html"
-                  ><img src="./images/images-decoration/5.PNG" alt="img-sale"
-                /></a>
-                <div class="box-txt">
-                  <h2>Contactanos</h2>
-                </div>
-              </div>
-              <div class="box2">
-                <h2>Directo a Whatsapp</h2>
-              </div>
+            <div class="box2">
+              <h2>Directo a Whatsapp</h2>
             </div>
           </div>
-        </div>
-      </section>
-      <section class="section-index2">
-        <div>
-          <div class="card2">
-            <div class="container">
-              <div class="box">
-                <img src="./images/images-decoration/1.png" alt="img" />
-                <div class="box-txt">
-                  <h2>Stock Variado</h2>
-                </div>
-              </div>
-              <div class="box2">
-                <h2>Celulares En Buenisimo Estado</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="card2">
-            <div class="container">
-              <div class="box">
-                <img src="./images/images-decoration/2.png" alt="img" />
-                <div class="box-txt">
-                  <h2>Almacenaje</h2>
-                </div>
-              </div>
-              <div class="box2">
-                <h2>Desde 64 hasta 128 Gigas</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="card2">
-            <div class="container">
-              <div class="box">
-                <img src="./images/images-decoration/3.png" alt="img" />
-                <div class="box-txt">
-                  <h2>Camara de Alta calidad</h2>
-                </div>
-              </div>
-              <div class="box2">
-                <h2>La Mejor Opcion en Camara</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div>
-          <div class="card2">
-            <div class="container">
-              <div class="box">
-                <img src="./images/images-decoration/6.png" alt="img" />
-                <div class="box-txt">
-                  <h2>Seguridad</h2>
-                </div>
-              </div>
-              <div class="box2">
-                <h2>Seguridad Total en la Compra</h2>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="div-btn-dark_mode btn-dark_mode-responsive">
-        <input
-          class="input-btn-dark-mode"
-          type="checkbox"
-          id="dark-mode-toggle"
-        />
-        <label class="label-btn-dark-mode" for="dark-mode-toggle">
-          <div class="sun-moon">
-            <img
-              class="sun"
-              src="./images/btn-dark-mode/sun.jpeg"
-              alt="sun"
-            />
-            <img
-              class="moon"
-              src="./images/btn-dark-mode/moon.jpeg"
-              alt="moon"
-            />
-          </div>
-        </label>
-      </div>
-    </main>
-
-    <footer class="grid-footer">
-      <div class="reserved">
-        <h2>ALL RIGHT RESERVED</h2>
-        <div class="footer-line"></div>
-      </div>
-      <div class="network">
-        <div>
-          <a
-            href="https://www.tiktok.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="./images/logo-tk.jpeg" alt="logo-tk"
-          /></a>
-        </div>
-        <div>
-          <a
-            href="https://www.instagram.com/iphone_companystore/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="./images/logo-ig.jpeg" alt="logo-ig"
-          /></a>
-        </div>
-        <div>
-          <a
-            href="https://www.facebook.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="./images/logo-fb.jpeg" alt="logo-fb"
-          /></a>
-        </div>
-        <div>
-          <a
-            href="https://www.whatsapp.com/?lang=es"
-            target="_blank"
-            rel="noopener noreferrer"
-            ><img src="./images/logo-wp.jpeg" alt="logo-wp"
-          /></a>
         </div>
       </div>
-    </footer>
+    </section>
+    <section class="section-index2">
+      <div>
+        <div class="card2">
+          <div class="container">
+            <div class="box">
+              <img src="./images/images-decoration/1.png" alt="img" />
+              <div class="box-txt">
+                <h2>Stock Variado</h2>
+              </div>
+            </div>
+            <div class="box2">
+              <h2>Celulares En Buenisimo Estado</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card2">
+          <div class="container">
+            <div class="box">
+              <img src="./images/images-decoration/2.png" alt="img" />
+              <div class="box-txt">
+                <h2>Almacenaje</h2>
+              </div>
+            </div>
+            <div class="box2">
+              <h2>Desde 64 hasta 128 Gigas</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card2">
+          <div class="container">
+            <div class="box">
+              <img src="./images/images-decoration/3.png" alt="img" />
+              <div class="box-txt">
+                <h2>Camara de Alta calidad</h2>
+              </div>
+            </div>
+            <div class="box2">
+              <h2>La Mejor Opcion en Camara</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="card2">
+          <div class="container">
+            <div class="box">
+              <img src="./images/images-decoration/6.png" alt="img" />
+              <div class="box-txt">
+                <h2>Seguridad</h2>
+              </div>
+            </div>
+            <div class="box2">
+              <h2>Seguridad Total en la Compra</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="div-btn-dark_mode btn-dark_mode-responsive">
+      <input class="input-btn-dark-mode" type="checkbox" id="dark-mode-toggle" />
+      <label class="label-btn-dark-mode" for="dark-mode-toggle">
+        <div class="sun-moon">
+          <img class="sun" src="./images/btn-dark-mode/sun.jpeg" alt="sun" />
+          <img class="moon" src="./images/btn-dark-mode/moon.jpeg" alt="moon" />
+        </div>
+      </label>
+    </div>
+  </main>
 
-    <!--Linkeo de Script de la barra de navegacion-->
-    <script src="./scripts/ui_components_script/nav.js"></script>
+  <footer class="grid-footer">
+    <div class="reserved">
+      <h2>ALL RIGHT RESERVED</h2>
+      <div class="footer-line"></div>
+    </div>
+    <div class="network">
+      <div>
+        <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer"><img src="./images/logo-tk.jpeg"
+            alt="logo-tk" /></a>
+      </div>
+      <div>
+        <a href="https://www.instagram.com/iphone_companystore/" target="_blank" rel="noopener noreferrer"><img
+            src="./images/logo-ig.jpeg" alt="logo-ig" /></a>
+      </div>
+      <div>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="./images/logo-fb.jpeg"
+            alt="logo-fb" /></a>
+      </div>
+      <div>
+        <a href="https://www.whatsapp.com/?lang=es" target="_blank" rel="noopener noreferrer"><img
+            src="./images/logo-wp.jpeg" alt="logo-wp" /></a>
+      </div>
+    </div>
+  </footer>
 
-    <!--Linkeo de Script de animacion del card2 -->
-    <script src="./scripts/ui_components_script/card2-index.js"></script>
+  <!--Linkeo de Script de la barra de navegacion-->
+  <script src="./scripts/ui_components_script/nav.js"></script>
 
-    <!--Linkeo de Script dark-mode-->
-    <script src="./scripts/ui_components_script/btn_dark-mode.js"></script>
-  </body>
+  <!--Linkeo de Script de animacion del card2 -->
+  <script src="./scripts/ui_components_script/card2-index.js"></script>
+
+  <!--Linkeo de Script dark-mode-->
+  <script src="./scripts/ui_components_script/btn_dark-mode.js"></script>
+</body>
+
 </html>
