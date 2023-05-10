@@ -1234,6 +1234,8 @@ footer {
     left: 9rem; } }
 
 @media (max-width: 800px) {
+  .cartBtn {
+    bottom: 4.5rem; }
   .cartOffCanvas .title-cart {
     left: 4rem;
     font-size: 40px; }
