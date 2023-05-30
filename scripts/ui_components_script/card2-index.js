@@ -6,15 +6,14 @@ const observer = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.classList.add('activado');
+      entry.target.style.animationPlayState = 'running'; // Iniciar la animación
     } else {
       entry.target.classList.remove('activado');
+      entry.target.style.animationPlayState = 'paused'; // Pausar la animación
     }
   });
 }, { threshold: 0 });
 
 card2.forEach(card2 => {
   observer.observe(card2);
-  card2.addEventListener('animationend', () => {
-    card2.classList.remove('activado');
-  });
 });
